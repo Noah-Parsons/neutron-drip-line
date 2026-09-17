@@ -1,6 +1,6 @@
 # Glossary
 
-Every term used in this project, in plain words. Alphabetical.
+Every term used in this project. Alphabetical.
 
 ---
 
