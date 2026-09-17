@@ -1,0 +1,13 @@
+# Data files: free from the IAEA, downloaded by the notebook
+*.mas20.txt
+*.mas20
+*.mas03
+data/
+
+# The project manual stays private
+*.pdf
+
+# Jupyter / R clutter
+.ipynb_checkpoints/
+.Rhistory
+.RData
