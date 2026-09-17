@@ -29,7 +29,7 @@ the magic numbers are.
 **In simple words:** the peaks land on or right next to the known magic numbers
 **28, 50, 82 and 126** (for neutrons) and **28, 50 and 82** (for protons). They
 appear at every window size. "The model's mistakes told me where the shells are"
-is literally true.
+is true.
 
 **What the other peaks are:**
 - **Peaks at the ends** (N = 159, Z = 107, and Z = 5) are edge effects. There's
@@ -85,11 +85,11 @@ better):
 | N = 20 | 16 | −1.38 | −2.49 | ✘ worse |
 | Z = 20 | 21 | −0.72 | −2.04 | ✘ worse |
 
-**In simple words:** it fixes the **big** shells (50, 82, 126) and makes the
+It fixes the **big** shells (50, 82, 126) and makes the
 **small** ones (20, 28) worse. One constant has to serve every shell. The big
 shells dominate the fit, and the small ones get pushed the wrong way.
 
-There's a second side effect. In the middle of the large 82–126 neutron shell
+In the middle of the large 82–126 neutron shell
 (around N = 100), the correction now overshoots by about +3 MeV. Many nuclei there
 are known to be deformed (squashed out of a sphere), which also changes their
 binding. This simple term knows nothing about that.
