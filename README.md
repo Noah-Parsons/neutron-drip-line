@@ -2,6 +2,10 @@
 
 **A quantified study of nuclear mass models and the neutron drip line.**
 
+> **New here?** Start with [docs/START_HERE.md](docs/START_HERE.md). Every term
+> is explained in [docs/GLOSSARY.md](docs/GLOSSARY.md), and every choice in
+> [docs/DECISIONS.md](docs/DECISIONS.md).
+
 ## The question, simply
 
 Take an atom and keep adding neutrons to its centre. For a while it holds on to
@@ -38,8 +42,8 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | Phase | What | Status |
 |---|---|---|
 | 0 | Check the units: iron-56 comes out at ~8790 keV per nucleon | done |
-| 1 | Build the clean dataset, binding energy curve, separation energies | mostly done (cross-check against `rct1` left) |
-| 2 | Fit the five-term formula, with its covariance matrix | to do |
+| 1 | Build the clean dataset, binding energy curve, separation energies | **done**: [docs/PHASE_1.md](docs/PHASE_1.md) |
+| 2 | Fit the five-term formula, with its covariance matrix | **done**: [docs/PHASE_2.md](docs/PHASE_2.md) |
 | 3 | Leftovers (residuals) and a shell correction | to do |
 | 4 | Garvey–Kelson relations | to do |
 | 5 | Blind test: fit to AME2003, predict nuclei measured since | to do |
@@ -47,18 +51,42 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | 7 | The drip line as a probability band | to do |
 | 8 | Write up | to do |
 
-### Results so far
+## Results so far
 
-- AME2020 has 3,558 nuclei. **1,008 are estimates, not measurements**
+**The dataset (Phase 1)**
+- AME2020 lists 3,558 nuclei. **1,008 are estimates, not measurements**
   (marked `#`), and were removed. **2,550 measured nuclei remain.**
-- Binding energies computed from mass excess match the AME's own values to
-  within 0.0002 keV for every nucleus.
+- Binding energies agree with the AME's own values to 0.0001 keV for every
+  nucleus.
+- Our two-neutron separation energies (S2n) match the AME's published ones for
+  **all 2,301 nuclei**, to within 0.001 keV. The same nuclei have values in both.
 - The most tightly bound nucleus is **nickel-62** (8794.56 keV per nucleon),
-  just ahead of iron-56 (8790.36 keV).
-- Two-neutron separation energy can be computed for 2,301 nuclei; 9 of them
-  are negative.
+  ahead of iron-58 and iron-56.
+- 9 measured nuclei, all light (hydrogen to oxygen), have negative S2n: they
+  are already past the drip line.
+
+**The five-term formula (Phase 2)**, fitted to 2,455 nuclei with A ≥ 20:
+
+| constant | MeV |
+|---|---|
+| volume a_V | 15.46 ± 0.02 |
+| surface a_S | 17.02 ± 0.08 |
+| Coulomb a_C | 0.699 ± 0.002 |
+| asymmetry a_A | 22.62 ± 0.06 |
+| pairing a_P | 12.2 ± 0.9 |
+
+- Typical miss: **3.2 MeV**.
+- **The error bars are not the whole story.** Changing only how nuclei are
+  weighted moves the constants by **12–16 times their error bars**. Several
+  equally reasonable choices give different answers, which is also why published
+  values disagree.
+- Volume and surface are correlated at 0.99, so the full covariance matrix is
+  kept for later phases.
+- The misses spike at the magic numbers 50, 82 and 126. They are biggest (up to
+  27 MeV) for very neutron-rich light nuclei, **right at the drip line**.
 
 ## How to run it
 
-Open `drip_line.ipynb` in Jupyter with an R kernel and run all cells from the
-top, in order.
+Open `drip_line.ipynb` in Google Colab (Runtime → Change runtime type → R) or in
+Jupyter with an R kernel, and run all cells from the top, in order. Full steps
+are in [docs/START_HERE.md](docs/START_HERE.md).
