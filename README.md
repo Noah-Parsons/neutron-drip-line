@@ -9,7 +9,7 @@
 ## The question, simply
 
 Take an atom and keep adding neutrons to its centre. For a while it holds on to
-them. Then, at some point, one more neutron just falls straight back out. That
+them. Then, at some point, one more neutron falls back out. That
 edge is called the **neutron drip line**. Past it, that version of the element
 cannot exist.
 
@@ -21,7 +21,7 @@ This project asks two things:
 1. Where do the models say the edge is?
 2. **How sure can anyone be?**
 
-## What this project is, and is not
+## What this project is
 
 The mass formula (1935), the Garvey–Kelson relations (1966), the published
 models and the data all belong to other people. What this project adds is a
