@@ -11,7 +11,7 @@ other.
 ## The formula, simply
 
 The formula estimates the binding energy B of any nucleus from just Z and A. It
-has five parts, each with a physical story:
+has five parts:
 
 | term | story | effect |
 |---|---|---|
@@ -86,9 +86,7 @@ even or odd, which the other terms don't see.)
 
 This is the most important thing Phase 2 found.
 
-The manual says to try two weightings: **uniform**, and **inverse-variance with a
-floor**, where precisely measured nuclei count more. There's no correct floor, so
-we tried four:
+There's no correct floor, so we tried four different weightings:
 
 | weighting | χ²/dof | a_V | a_S | a_C | a_A | a_P |
 |---|---|---|---|---|---|---|
@@ -109,7 +107,7 @@ is below 1000 keV, the largest being 838, so every nucleus gets the same weight.
 | error bar (MeV) | 0.024 | 0.076 | 0.0017 | 0.059 | 0.91 |
 | **shift ÷ error bar** | **15.6** | **16.4** | **16.2** | **12.9** | 1.7 |
 
-**In simple words:** the error bars say a_S is known to ±0.08 MeV. But just
+The error bars say a_S is known to ±0.08 MeV. But just
 changing *how you weight the nuclei*, a choice with no single right answer, moves
 it by 1.24 MeV. **The error bars understate the real uncertainty by more than ten
 times.**
