@@ -6,7 +6,7 @@
 > is explained in [docs/GLOSSARY.md](docs/GLOSSARY.md), and every choice in
 > [docs/DECISIONS.md](docs/DECISIONS.md).
 
-## The question, simply
+## The question
 
 Take an atom and keep adding neutrons to its centre. For a while it holds on to
 them. Then, at some point, one more neutron falls back out. That
