@@ -1,24 +1,24 @@
 # Start here
 
-This guide assumes you know nothing about this project, nuclear physics or R.
-Words you might not know are explained in [GLOSSARY.md](GLOSSARY.md).
+This guide assumes you know nothing about this project, nuclear physics, or R.
+Definitions are provided in [GLOSSARY.md](GLOSSARY.md).
 
 ---
 
-## 1. The project in two minutes
+## 1. The project
 
 Every atom has a tiny centre called the **nucleus**, made of **protons** and
 **neutrons**.
 
 Take an element, say oxygen, and imagine adding neutrons to its nucleus one at a
 time. For a while the nucleus holds on to them. It becomes a heavier version
-(an **isotope**) of oxygen. Then at some point, one more neutron just falls
+(an **isotope**) of oxygen. Then at some point, one more neutron falls
 straight back out. The nucleus can't hold it.
 
 That edge is the **neutron drip line**. Past it, that version of the element
 **cannot exist**.
 
-Here's the problem: **nobody has measured where that edge is for most
+The problem: **nobody has measured where that edge is for most
 elements.** Experiments have reached it only for the lightest ones, up to about
 neon (element 10). For everything heavier, we rely on formulas that predict it,
 and the formulas disagree.
@@ -28,11 +28,7 @@ This project asks:
 1. Where do the formulas say the edge is?
 2. **How sure can anyone be?**
 
-The second question is the real one.
-
-## 2. How the answer is built
-
-Think of it as a staircase. Each step stands on the one below.
+## 2. Project Phases
 
 | Phase | In plain words |
 |---|---|
@@ -44,7 +40,7 @@ Think of it as a staircase. Each step stands on the one below.
 | 5 | **Blind test:** fit to old data (2003), then predict nuclei measured since |
 | 6 | Put the professional models through the same blind test |
 | 7 | Turn it all into a drip line **with a probability for every isotope** |
-| 8 | Write it up |
+| 8 | Write |
 
 Done so far: **Phases 0, 1, 2 and 3.** See [PHASE_1.md](PHASE_1.md),
 [PHASE_2.md](PHASE_2.md) and [PHASE_3.md](PHASE_3.md).
@@ -58,7 +54,7 @@ honest test** of them. Every choice is written down in
 
 ---
 
-## 4. Run it yourself
+## 4. Running it 
 
 All the work is in one file, **`drip_line.ipynb`**. It's a notebook: a document
 mixing explanations with small blocks of code you run one at a time. The code is
