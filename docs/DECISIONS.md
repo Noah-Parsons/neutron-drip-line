@@ -1,7 +1,6 @@
 # Decisions log
 
-Every choice that could change a result goes here: what was chosen, why, and
-what else was tried. A careful reader should never have to guess.
+Every choice that could change a result goes here.
 
 Newest at the bottom.
 
@@ -41,8 +40,7 @@ separately.
 
 **Chose:** 2,455 nuclei with A ≥ 20; 95 lighter ones left out.
 **Why:** the liquid-drop picture behind the formula barely applies to very small
-nuclei. The cutoff of 20 is the one the project manual suggests. It was chosen
-before fitting.
+nuclei. It was chosen before fitting.
 **Also tried:** all nuclei (except the free neutron and hydrogen-1). Constants
 moved by about 9 error bars, and the typical miss rose from 3.2 to 3.7 MeV. See
 [PHASE_2.md](PHASE_2.md), Result 5.
