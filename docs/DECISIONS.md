@@ -79,3 +79,62 @@ fits, which include those later nuclei. To stop that from leaking into the test:
 - No new choice (a different cutoff, a new floor, dropping outliers) may be made
   after seeing any Phase 5 test result. If one turns out to be needed, it is
   reported as a separate, clearly labelled extra analysis.
+
+---
+
+*D9–D11 were written down before the six-term fit was run for the first time.
+The residual plots of Phase 2 and the magic-number search in Phase 3 had
+already been looked at.*
+
+### D9. The shell correction's shape (Phase 3)
+
+**Chose:** add one term, a_sh × [f(Z) + f(N)], with
+
+> f(n) = ν × (D − ν) / D
+
+where the magic numbers either side of n are **lower** and **upper**,
+ν = n − lower is how far n is into its shell, and D = upper − lower is the size of
+the shell.
+
+**Magic numbers used:** 2, 8, 20, 28, 50, 82, 126, then **184** as the next
+neutron shell above 126 and **126** as the next proton shell above 82. No
+nucleus measured so far has reached either of those upper values; they are the
+standard theoretical predictions.
+
+**Why this shape:**
+- It is **zero at every magic number** (full shell) and **largest in the middle
+  of a shell**, which is where the Phase 2 residuals are lowest.
+- It grows with the shell's size D, so big shells get a bigger effect.
+- It counts particles inside a shell (ν) and empty places left in it (D − ν).
+  This idea, counting valence particles and holes, is widely used in nuclear
+  structure. **Still to do:** find the exact source for this form and cite it
+  before presenting.
+- It has **one** constant, and the fit stays linear.
+
+The sign of a_sh is not forced. The fit decides it; a negative a_sh means
+"less binding in mid-shell".
+
+### D10. How the shell correction is judged (Phase 3)
+
+Four measures, all with uniform weighting and A ≥ 20, like D5 and D6:
+1. The change in rms residual.
+2. For each magic number, the average residual of nuclei **at** that number,
+   before and after.
+3. The fitted a_sh, its error bar and its correlations.
+4. **The far-from-stability test (D11)**, which is the one that decides whether
+   the correction helps where the drip line is.
+
+### D11. The far-from-stability test (Phase 3)
+
+**Chose:** for every element with **at least 8** measured isotopes in the fit
+set, hide its **4 most neutron-rich** measured isotopes. Fit both the five-term
+and the six-term formula to everything else. Predict the hidden isotopes and
+compare the rms miss. Also report it separately for the 1st, 2nd, 3rd and 4th
+most neutron-rich.
+**Why:** a correction can make the fit look better on the nuclei it was fitted to
+but predict worse outward. Outward, toward more neutrons, is where the drip line
+is. Hiding the edge and predicting it tests exactly that direction.
+**Sensitivity:** also report hiding 2 and hiding 6.
+**Limit:** this uses AME2020 only. For heavy elements, the most neutron-rich
+*measured* isotopes are still far from the drip line. The real extrapolation test
+is Phase 5.

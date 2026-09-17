@@ -46,8 +46,8 @@ Think of it as a staircase. Each step stands on the one below.
 | 7 | Turn it all into a drip line **with a probability for every isotope** |
 | 8 | Write it up |
 
-Done so far: **Phases 0, 1 and 2.** See [PHASE_1.md](PHASE_1.md) and
-[PHASE_2.md](PHASE_2.md).
+Done so far: **Phases 0, 1, 2 and 3.** See [PHASE_1.md](PHASE_1.md),
+[PHASE_2.md](PHASE_2.md) and [PHASE_3.md](PHASE_3.md).
 
 ## 3. What this project is not
 
@@ -111,6 +111,7 @@ the table `df`. Run everything from the top again.
 | `docs/GLOSSARY.md` | every term, explained simply |
 | `docs/PHASE_1.md` | building and checking the dataset |
 | `docs/PHASE_2.md` | fitting the formula, and what it taught us |
+| `docs/PHASE_3.md` | finding the magic numbers, and the shell correction |
 | `docs/DECISIONS.md` | every choice made, and why |
 
 The data files (`*.mas20.txt`) are **not** stored in the repository. The

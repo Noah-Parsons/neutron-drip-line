@@ -119,3 +119,22 @@ count more.
 
 **Z (atomic number):** the number of protons. It decides which element it is.
 Iron always has Z = 26.
+
+---
+
+*Added in Phase 3:*
+
+**Deformed nucleus:** a nucleus squashed or stretched out of a sphere, often
+halfway between two magic numbers. The simple formulas here assume a sphere.
+
+**Hidden set (held-out set):** nuclei deliberately kept out of a fit so the
+formula can be tested on them afterwards.
+
+**Shell (nuclear shell):** a group of energy levels protons or neutrons fill up,
+like electron shells in chemistry. A magic number is a full shell.
+
+**Shell correction:** an extra term added to the formula to account for shells.
+In this project: a_sh × [f(Z) + f(N)], zero at magic numbers and largest
+mid-shell.
+
+**Valence particles:** the protons or neutrons past the last full shell.

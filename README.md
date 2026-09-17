@@ -44,7 +44,7 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | 0 | Check the units: iron-56 comes out at ~8790 keV per nucleon | done |
 | 1 | Build the clean dataset, binding energy curve, separation energies | **done**: [docs/PHASE_1.md](docs/PHASE_1.md) |
 | 2 | Fit the five-term formula, with its covariance matrix | **done**: [docs/PHASE_2.md](docs/PHASE_2.md) |
-| 3 | Leftovers (residuals) and a shell correction | to do |
+| 3 | Leftovers (residuals) and a shell correction | **done**: [docs/PHASE_3.md](docs/PHASE_3.md) |
 | 4 | Garvey–Kelson relations | to do |
 | 5 | Blind test: fit to AME2003, predict nuclei measured since | to do |
 | 6 | Compare the published models on the same test | to do |
@@ -84,6 +84,18 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   kept for later phases.
 - The misses spike at the magic numbers 50, 82 and 126. They are biggest (up to
   27 MeV) for very neutron-rich light nuclei, **right at the drip line**.
+
+**The shell correction (Phase 3)**
+- Searching the misses for peaks finds the magic numbers **28, 50, 82 and 126**
+  on its own, without being told where to look.
+- A sixth term for shell structure (a_sh = −0.506 ± 0.013 MeV) cuts the typical
+  miss from **3.24 to 2.56 MeV (21 %)**. It fixes the big shells (50, 82, 126)
+  but makes the small ones (20, 28) worse.
+- **Far from stability:** with each element's 4 most neutron-rich isotopes
+  hidden, the six-term formula predicts them better at every step outward (rms
+  4.41 → 3.51 MeV). Both formulas miss more the further out they go.
+- The worst misses (boron-21, boron-20, carbon-22, up to 27 MeV) are right at the
+  drip line, and the correction doesn't touch them.
 
 ## How to run it
 
