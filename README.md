@@ -45,7 +45,7 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | 1 | Build the clean dataset, binding energy curve, separation energies | **done**: [docs/PHASE_1.md](docs/PHASE_1.md) |
 | 2 | Fit the five-term formula, with its covariance matrix | **done**: [docs/PHASE_2.md](docs/PHASE_2.md) |
 | 3 | Leftovers (residuals) and a shell correction | **done**: [docs/PHASE_3.md](docs/PHASE_3.md) |
-| 4 | Garvey–Kelson relations | to do |
+| 4 | Garvey–Kelson relations | **done**: [docs/PHASE_4.md](docs/PHASE_4.md) |
 | 5 | Blind test: fit to AME2003, predict nuclei measured since | to do |
 | 6 | Compare the published models on the same test | to do |
 | 7 | The drip line as a probability band | to do |
@@ -96,6 +96,29 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   4.41 → 3.51 MeV). Both formulas miss more the further out they go.
 - The worst misses (boron-21, boron-20, carbon-22, up to 27 MeV) are right at the
   drip line, and the correction doesn't touch them.
+
+**The Garvey–Kelson relations (Phase 4)**
+- Of the six ways to arrange six nuclei in a 3×3 patch of the chart, exactly
+  **two** cancel: the transverse and longitudinal relations. The other four are ten
+  times worse, so a mistyped index would have been obvious. The published
+  transverse form is reproduced to 2×10⁻¹⁰ keV.
+- Where all six masses are measured, the median miss is **109–116 keV against
+  2,564 keV for the six-term formula** — about twenty times better. The rms is five
+  times the median, though: the tail is heavy, and below A = 20 the relations are
+  barely better than the formula.
+- **Predicting the hidden neutron-rich edge** (the Phase 3 hold-out): 0.58 MeV rms
+  against 3.51 MeV for the six-term formula. At one step out, 0.90 against 4.02.
+- **The cost of each step outward is measured:** rms ≈ 0.13 MeV × steps^1.37. The
+  exponent is not 0.5, because chained errors are not independent — a prediction
+  inherits its neighbours' mistakes.
+- **They stop winning at about twelve chained steps**, where the six-term formula
+  overtakes them. For most heavy elements the drip line is further out than that.
+- 17 of 364 hidden nuclei **cannot be reached at all**. The global formula always
+  returns something; the relations sometimes return nothing.
+- Two obvious error bars on a chained prediction both fail: propagating the
+  relation's scatter is exponentially too wide (96 % inside 1σ, 710 MeV by twenty
+  steps), and the disagreement between routes is far too narrow (31 % inside twice
+  the spread) because routes sharing a predicted neighbour inherit its error.
 
 ## How to run it
 

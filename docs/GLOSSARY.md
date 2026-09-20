@@ -138,3 +138,32 @@ In this project: a_sh × [f(Z) + f(N)], zero at magic numbers and largest
 mid-shell.
 
 **Valence particles:** the protons or neutrons past the last full shell.
+
+---
+
+*Added in Phase 4:*
+
+**Chaining:** using a prediction as an input to the next prediction. It is how
+the local relations reach nuclei that have no measured neighbours, and it is why
+their errors grow with every step outward.
+
+**Garvey–Kelson relation:** a rule saying that six particular nuclei, close
+together on the chart, have binding energies that cancel out to nearly zero when
+added with alternating signs. Two arrangements work: the **transverse** and the
+**longitudinal** relation. Published by Garvey and Kelson in 1966.
+
+**Global model:** a single formula fitted to the whole chart at once, like the
+five- and six-term formulas here. The opposite of a **local relation**.
+
+**Local relation:** a rule that only involves nuclei sitting next to each other.
+It says nothing about the chart as a whole, and it is far more accurate where it
+applies.
+
+**Power law:** a relationship of the form y = a × x^b. The error of a chained
+prediction follows one, with b = 1.37.
+
+**Route:** one way of reaching an unknown nucleus with a relation — which of the
+two relations, and which of its six cells is the unknown. Twelve in total.
+
+**Unreachable nucleus:** one that no relation can predict, because it does not
+have five measured neighbours in any of the twelve arrangements.

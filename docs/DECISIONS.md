@@ -136,3 +136,78 @@ is. Hiding the edge and predicting it tests exactly that direction.
 **Limit:** this uses AME2020 only. For heavy elements, the most neutron-rich
 *measured* isotopes are still far from the drip line. The real extrapolation test
 is Phase 5.
+
+---
+
+*D12–D16 were written down before the chaining test of Phase 4 was run for the
+first time. The relations themselves had already been verified on measured
+nuclei (step 1 below), which is a check on arithmetic, not a fitted result.*
+
+### D12. Find the relations from the data, not from a copied index list (Phase 4)
+
+**Chose:** enumerate every arrangement of six cells in a 3×3 block of the chart
+that uses each proton row and each neutron column once on each side — there are
+six of them — and pick the ones that actually cancel on measured nuclei.
+**Why:** an index arrangement copied out of a paper and mistyped will not
+announce itself. The manual is explicit about this. Enumerating removes the
+chance of a typed index being wrong, and it shows how much better the two real
+relations are than the four arrangements that do not cancel.
+**Checked:** the surviving `120/201` arrangement reproduces the published
+transverse relation, written out term by term, to 2×10⁻¹⁰ keV.
+**Note:** the enumeration looks at every measured nucleus, so it is not blind.
+It fixes no adjustable number — only which six cells to use — but it is recorded
+here as a place where the whole dataset was seen.
+
+### D13. Feed the relations binding energies (Phase 4)
+
+**Chose:** apply the relations to binding energy B, not to masses or mass
+excesses.
+**Why:** the three differ by terms linear in Z, N and A, and both relations
+cancel those exactly, so the answer is the same up to sign. B is what the rest of
+the notebook already holds.
+**Checked:** binding energies and mass excesses agree to 7×10⁻¹⁰ keV for both
+relations.
+
+### D14. How a chained prediction is made (Phase 4)
+
+**Chose:**
+- Twelve routes are allowed to a nucleus: two relations × six choices of which
+  cell in the block is the unknown.
+- A nucleus is predicted as soon as any route has its other five masses in hand.
+  Where several routes work, take the plain average.
+- Predictions are fed back in and the process repeats until nothing new can be
+  reached.
+- Nuclei that no route can reach are **reported as unreachable**, not filled in
+  from the global formula. Mixing the two would hide the fact that the relations
+  cannot always answer.
+
+### D15. The hold-out for measuring error growth (Phase 4)
+
+**Chose:** the Phase 3 hold-out (D11) — hide the k most neutron-rich isotopes of
+every element with at least k+4 measured isotopes — run at k = 4, 8, 12, 16 and
+20, and pool the results.
+**Why:** k = 4 alone only ever needs a few chained steps. Deeper hold-outs are
+what make the error growth visible.
+**Reported against chain length, not distance from the edge.** A nucleus two
+isotopes past the edge can still take five chained steps to reach if the route
+has to go round an unmeasured gap, and it is the chaining that costs the
+accuracy. Distance from the edge is reported too, for the k = 4 test, so it can
+be compared with D11 directly.
+**Each relation's own scatter is taken from the training set alone**, from blocks
+lying wholly inside it. Nothing from the hidden nuclei enters.
+
+### D16. How the uncertainty on a chained prediction is reported (Phase 4)
+
+**Chose:** report the empirical rms error as a function of chain length, measured
+by the hold-out, and use that as the error bar.
+**Rejected, with the numbers shown:**
+- **Propagating the relation's scatter through the chain.** Each round adds the
+  scatter plus the variance of any input that was itself predicted, so the band
+  grows exponentially: 0.36 MeV after one round, 25 MeV after twelve, 710 MeV
+  after twenty. It holds 96 % of the nuclei inside 1σ instead of 68 %.
+- **The disagreement between routes reaching the same nucleus.** Too narrow in
+  the opposite direction: twice the spread holds only 31 % overall, and 6–12 %
+  beyond ten rounds. Routes sharing an already-predicted neighbour inherit its
+  error, so they agree with each other while all being wrong.
+**Known limit:** the empirical curve is one average over the whole chart. The
+scatter around it by region is large, and Phase 7 has to carry that.

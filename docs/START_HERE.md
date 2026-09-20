@@ -42,8 +42,8 @@ This project asks:
 | 7 | Turn it all into a drip line **with a probability for every isotope** |
 | 8 | Write |
 
-Done so far: **Phases 0, 1, 2 and 3.** See [PHASE_1.md](PHASE_1.md),
-[PHASE_2.md](PHASE_2.md) and [PHASE_3.md](PHASE_3.md).
+Done so far: **Phases 0, 1, 2, 3 and 4.** See [PHASE_1.md](PHASE_1.md),
+[PHASE_2.md](PHASE_2.md), [PHASE_3.md](PHASE_3.md) and [PHASE_4.md](PHASE_4.md).
 
 ## 3. What this project is not
 
@@ -108,6 +108,7 @@ the table `df`. Run everything from the top again.
 | `docs/PHASE_1.md` | building and checking the dataset |
 | `docs/PHASE_2.md` | fitting the formula, and what it taught us |
 | `docs/PHASE_3.md` | finding the magic numbers, and the shell correction |
+| `docs/PHASE_4.md` | the local relations, and how far outward they can be trusted |
 | `docs/DECISIONS.md` | every choice made, and why |
 
 The data files (`*.mas20.txt`) are **not** stored in the repository. The
