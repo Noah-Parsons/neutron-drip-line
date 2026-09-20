@@ -152,8 +152,17 @@ six of them — and pick the ones that actually cancel on measured nuclei.
 announce itself. The manual is explicit about this. Enumerating removes the
 chance of a typed index being wrong, and it shows how much better the two real
 relations are than the four arrangements that do not cancel.
-**Checked:** the surviving `120/201` arrangement reproduces the published
-transverse relation, written out term by term, to 2×10⁻¹⁰ keV.
+**Checked:** both surviving arrangements reproduce the published relations,
+written out term by term in the order the literature uses, M(N, Z), to
+7×10⁻¹⁰ keV **and with the same sign**, so the residuals reported are the
+published quantity and not its negative. Sources: Garvey and Kelson, *Physical
+Review Letters* **16**, 197 (1966); Garvey, Gerace, Jaffe, Talmi and Kelson,
+*Reviews of Modern Physics* **41**, S1 (1969); quoted in that form by Piekarewicz
+et al., arXiv:0912.0503, Eqs. (1a) and (1b). Two labelling flips cancel on the way
+there — the enumeration puts the plus and minus sides the other way round, and
+binding energy carries the opposite sign to a mass — which is recorded because one
+unnoticed flip would leave every mean residual pointing the wrong way while every
+rms stayed right.
 **Note:** the enumeration looks at every measured nucleus, so it is not blind.
 It fixes no adjustable number — only which six cells to use — but it is recorded
 here as a place where the whole dataset was seen.

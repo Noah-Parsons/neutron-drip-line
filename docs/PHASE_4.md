@@ -41,21 +41,76 @@ Two of the six cancel. The other four are ten times worse, and they are the
 useful control: they show what an arrangement that does *not* cancel the smooth
 part of the mass looks like, which is what a mistyped index would give.
 
-The two that work are the pair Garvey and Kelson published. `120/201` is the
-**transverse** relation; writing the published form out term by term and
-comparing gives agreement to 2×10⁻¹⁰ keV, so the indices are right. `021/102` is
-the **longitudinal** one.
-
-**Why those two:** both cancel any mass that can be written as a function of Z
-plus a function of N plus a function of A. The transverse does it exactly — the Z
-values, the N values and the A values on the plus side are the same three numbers
-as on the minus side. The longitudinal matches the A values' first two moments
-rather than the values themselves, so a smooth dependence on A survives only at
-third order. The other four cancel nothing beyond the terms linear in Z and N.
+The two that work are the pair Garvey and Kelson published: `120/201` is the
+**transverse** relation, `021/102` the **longitudinal** one.
 
 A useful consequence of that cancellation: masses, mass excesses and binding
 energies all give the same answer, because they differ only by terms linear in Z,
 N and A. Checked to 7×10⁻¹⁰ keV.
+
+### Checked against the published equations, signs included
+
+The enumeration says which six cells cancel. It does not say that those are the
+relations Garvey and Kelson actually wrote, or that the residual here carries the
+sign theirs does. Both were checked. The published pair, with the arguments in the
+order M(N, Z) and in terms of masses:
+
+> M(N+2, Z−2) − M(N, Z) + M(N, Z−1) − M(N+1, Z−2) + M(N+1, Z) − M(N+2, Z−1) = 0
+>
+> M(N+2, Z) − M(N, Z−2) + M(N+1, Z−2) − M(N+2, Z−1) + M(N, Z−1) − M(N+1, Z) = 0
+
+Sources: Garvey and Kelson, *Physical Review Letters* **16**, 197 (1966); Garvey,
+Gerace, Jaffe, Talmi and Kelson, *Reviews of Modern Physics* **41**, S1 (1969).
+Quoted in this form, with the derivation of why they work, by Piekarewicz,
+Centelles, Roca-Maza and Viñas, *Garvey–Kelson relations for nuclear charge radii*,
+arXiv:0912.0503, Eqs. (1a) and (1b).
+
+Both equations pick out the same six nuclei as the two arrangements found by
+enumeration, to 7×10⁻¹⁰ keV, **and with the same sign**. So the residuals in this
+phase are the published quantity, not its negative.
+
+Two labelling flips cancel on the way there: the enumeration puts the plus and
+minus sides the other way round from the published equations, and binding energy
+carries the opposite sign to a mass. Worth writing down, because one unnoticed flip
+would have left every mean residual in this phase pointing the wrong way while
+every rms stayed right.
+
+### Why those two and not the other four
+
+Feed each arrangement the smooth five-term formula instead of the real masses.
+Whatever survives is smooth curvature the arrangement failed to cancel:
+
+| arrangement | rms on the smooth formula |
+|---|---|
+| 120 / 201 (transverse) | **132 keV** |
+| 021 / 102 (longitudinal) | **218 keV** |
+| 012 / 120 | 2,923 keV |
+| 012 / 201 | 2,966 keV |
+| 021 / 210 | 2,944 keV |
+| 102 / 210 | 2,801 keV |
+
+The two real relations remove the formula almost entirely. The other four leave all
+of it, which is exactly why their residuals on real data are ten times larger: they
+are measuring the liquid drop, not local structure.
+
+Adding the Phase 3 shell term to the smooth surface changes almost nothing (132 →
+130 keV, 218 → 216 keV). That term is a function of Z plus a function of N, and
+both relations cancel those exactly.
+
+The transverse relation is the more exact of the two, and exactly so: it **is** a
+third difference of the mass surface,
+
+> transverse = ∂³M/∂Z∂N² − ∂³M/∂Z²∂N
+
+which the notebook confirms to 2×10⁻¹¹ keV. Anything whose third derivatives
+vanish — anything linear or quadratic in Z and N — drops out of it completely. The
+longitudinal relation is the *sum* of those same two third differences plus a
+fourth-order remainder, so it holds one order less exactly, which is where its
+larger smooth leftover comes from.
+
+That said, on real data the longitudinal relation has the *smaller* rms (486
+against 599 keV). The smooth leftover is not what limits either of them; local
+structure is.
 
 ## Result 2: how accurate they are
 
@@ -240,9 +295,5 @@ bad.
 
 ## Still to do
 
-- The relations were verified against the published transverse form. The
-  longitudinal form was found by enumeration and named by its footprint; check
-  the sign convention against Garvey, Gerace, Jaffe, Talmi and Kelson, *Reviews
-  of Modern Physics* **41** (1969) before presenting.
 - The chaining test uses AME2020 only, so every "prediction" is of a nucleus
   somebody has already measured. The real extrapolation test is Phase 5.
