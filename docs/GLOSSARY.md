@@ -167,3 +167,33 @@ two relations, and which of its six cells is the unknown. Twelve in total.
 
 **Unreachable nucleus:** one that no relation can predict, because it does not
 have five measured neighbours in any of the twelve arrangements.
+
+---
+
+*Added in Phase 5:*
+
+**AME2003:** the 2003 edition of the Atomic Mass Evaluation. Standing in for
+"what was known then", it makes the blind test possible.
+
+**Bias (systematic error):** a miss that leans one way. If a formula's errors
+average out to zero it is unbiased, whatever their size; if they average +1.3 MeV
+it is getting something wrong in one direction.
+
+**Blind (of a result):** obtained without the answers having been visible at any
+point, including while choosing the method. A result can be blind in its numbers
+and not blind in its shape, which is why the six-term formula is labelled as not
+blind in Phase 5.
+
+**Coverage:** the fraction of predictions that actually land inside their stated
+error bars. A 1σ band should cover about 68 %, a 2σ band about 95 %. Coverage is
+how you find out whether an error bar means anything.
+
+**Gap fill:** a nucleus measured later that sits *inside* the range already
+measured, rather than beyond its edge. Easier than extrapolating, and counted
+separately for that reason.
+
+**Test set:** the nuclei kept out of the fit and used to score it. Here: the 326
+measured in AME2020 but not in AME2003.
+
+**Tail (of a distribution):** the rare large values. A method can have a good
+median and a terrible tail, and for the drip line the tail is what matters.

@@ -220,3 +220,73 @@ by the hold-out, and use that as the error bar.
   error, so they agree with each other while all being wrong.
 **Known limit:** the empirical curve is one average over the whole chart. The
 scatter around it by region is large, and Phase 7 has to carry that.
+
+---
+
+*D17–D20 were written down after the AME2003 file was read and the two sets were
+counted, and before any prediction was made or any test error was looked at. D8,
+written in Phase 2, sets the rules this phase has to obey.*
+
+### D17. How AME2003 is read (Phase 5)
+
+**Chose:** `mass.mas03` from the AMDC, parsed on its own declared format
+(`a1,i3,i5,i5,i5,1x,a3,a4,1x,f13.5,f11.5,f11.3,f9.3`). N, Z and A sit in the same
+columns as the 2020 file but the mass excess is at 29–41 and its uncertainty at
+42–52, two columns narrower, so the Phase 1 reader cannot be pointed at it
+unchanged.
+**Estimates are flagged the same way** (`#` in place of the decimal point) and are
+removed the same way: 951 of 3,179 rows, leaving 2,228 measured.
+**Binding energies use AME2003's own Δ(¹H) = 7288.97050 keV and Δ(n) =
+8071.31710 keV**, not the 2020 values, so that nothing from after the cutoff enters
+the fit — not even a mass excess constant.
+**Checked:** B/A agrees with the 2003 file's own column to 0.0005 keV over all
+2,228, which is the rounding of that column. Iron-56 comes out at 8790.32 keV
+against 8790.34 in AME2020; the two editions genuinely differ by 0.02 keV there.
+
+### D18. What goes in the test set (Phase 5)
+
+**Chose:** a nucleus is in the test set if it is **measured in AME2020 and not
+measured in AME2003** — whether it was an estimate in 2003 (301 nuclei) or absent
+from the file altogether (35). With the A ≥ 20 cutoff of D5 that gives **326 test
+nuclei** against a **2,143-nucleus fit set**. This is D8's rule, unchanged.
+
+**Classified by direction, because "17 years of progress" is not all outward.**
+For each element, take the range of neutron numbers AME2003 had measured. A test
+nucleus is a **neutron-rich extension** if N is above that range, a **proton-rich
+extension** if below, and a **gap fill** if inside it. Only the first kind tests
+extrapolation toward the drip line, and results are reported separately for it.
+
+**14 nuclei were measured in 2003 but are not measured in AME2020** — AME2020
+demoted them back to estimates. They stay in the fit set, because a person fitting
+in 2003 would have used them, and most carry 2003 uncertainties of 700–1,800 keV.
+A refit without them is reported as a sensitivity check.
+
+### D19. The six-term formula is not blind, and is labelled as such (Phase 5)
+
+The five-term formula is pre-1935 physics with no choice in it beyond D5 and D6,
+so its blind test is clean. **The six-term formula is not.** Its shell term (D9)
+was designed by looking at AME2020 residuals, and AME2020 includes every test
+nucleus. Only the form was chosen that way — a_sh is refitted on 2003 data alone —
+but that is still one shape chosen with the answers visible.
+**Chose:** report it anyway, alongside the five-term formula, and label every
+six-term number in this phase as not fully blind. Do not use it as the headline
+result.
+
+### D20. What counts as the predicted uncertainty (Phase 5)
+
+Declared before any test error was seen, because this is the phase that checks
+whether the Phase 2 error bars mean anything (D7's known limit).
+
+For the fitted formulas, a prediction's uncertainty is **xᵀCx**, with C the
+χ²/dof-scaled covariance of D7, plus the residual scatter of the fit. Reported
+alongside it, not folded in: **the spread of the prediction across the five
+weighting variants** of D6.
+
+For the Garvey–Kelson chains, the uncertainty is the Phase 4 empirical curve,
+**rms ≈ 0.13 MeV × (chained steps)^1.37**, which was fitted on AME2020 hold-outs.
+Phase 5 is the first out-of-sample test of that curve, and its result is reported
+whichever way it comes out.
+
+Every weighting variant is reported, and no choice is revised after seeing a test
+result. Anything that turns out to be needed afterwards is reported separately and
+labelled, as D8 requires.

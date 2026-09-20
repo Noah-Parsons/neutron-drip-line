@@ -30,12 +30,14 @@ measured later, and a drip line given as a probability instead of a single line.
 
 ## Data
 
-The measured masses come from the **Atomic Mass Evaluation 2020 (AME2020)**,
-free from the IAEA: <https://www-nds.iaea.org/amdc/>. The notebook downloads the
-files itself, so they are not stored here.
+The measured masses come from the **Atomic Mass Evaluation**, free from the IAEA:
+<https://www-nds.iaea.org/amdc/>. The notebook downloads the files itself, so they
+are not stored here. The **2020** edition supplies the measurements; the **2003**
+edition supplies the blind test of Phase 5.
 
 Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
-*Chinese Physics C* 45, 030003 (2021).
+*Chinese Physics C* 45, 030003 (2021). For AME2003: Audi, Wapstra and Thibault,
+*Nuclear Physics A* 729, 337 (2003).
 
 ## Progress
 
@@ -46,7 +48,7 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | 2 | Fit the five-term formula, with its covariance matrix | **done**: [docs/PHASE_2.md](docs/PHASE_2.md) |
 | 3 | Leftovers (residuals) and a shell correction | **done**: [docs/PHASE_3.md](docs/PHASE_3.md) |
 | 4 | Garvey–Kelson relations | **done**: [docs/PHASE_4.md](docs/PHASE_4.md) |
-| 5 | Blind test: fit to AME2003, predict nuclei measured since | to do |
+| 5 | Blind test: fit to AME2003, predict nuclei measured since | **done**: [docs/PHASE_5.md](docs/PHASE_5.md) |
 | 6 | Compare the published models on the same test | to do |
 | 7 | The drip line as a probability band | to do |
 | 8 | Write up | to do |
@@ -119,6 +121,28 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   relation's scatter is exponentially too wide (96 % inside 1σ, 710 MeV by twenty
   steps), and the disagreement between routes is far too narrow (31 % inside twice
   the spread) because routes sharing a predicted neighbour inherit its error.
+
+**The blind test (Phase 5)** — fit to AME2003, predict the 326 nuclei measured since
+- **The formula is 1.65 times worse on nuclei it has not seen**: 2.98 MeV rms on the
+  2,143 it was fitted to, 4.90 MeV on the 326 it was not. The median error is
+  1.72 MeV, so the rms is carried by a tail. The mean error is **+1.29 MeV** — the
+  new nuclei are systematically *more* bound than predicted.
+- **Four of the five constants moved by more than five of their own 2003 standard
+  errors** between the editions (volume 6.4σ, surface 6.9σ). Those error bars were
+  already inflated by χ²/dof and are still far too small. This is the clearest answer
+  the project has to "how sure can anyone be?".
+- **The prediction band is right in the middle and wrong in the tail:** 64 % inside
+  1σ against the 68 % it should hold, but only 83 % inside 2σ against 95 %. 17 % of
+  the test nuclei miss by 6 to 30 MeV. The covariance matrix contributes 0.18 MeV of
+  the 2.98 MeV band; the rest is the formula's own inadequacy.
+- **The Garvey–Kelson relations, blind: 0.86 MeV rms and 0.30 MeV median**, against
+  4.37 and 1.89 for the formula on the same nuclei — five times better, unbiased, and
+  0.24 MeV against 4.67 for Z > 82. But they cannot reach 57 of the 326 at all.
+- **Phase 4's uncertainty curve was optimistic by a steady factor of two.** Hiding the
+  outer rim of a finished chart is easier than the real, ragged frontier of 2003.
+  Doubling the curve makes it honest, so Phase 7 carries twice it.
+- The worst twelve misses are all light and neutron-rich — boron-21 at 30 MeV — which
+  is the one corner of the chart where the drip line has actually been reached.
 
 ## How to run it
 
