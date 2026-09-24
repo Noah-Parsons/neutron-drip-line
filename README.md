@@ -2,7 +2,7 @@
 
 **A quantified study of nuclear mass models and the neutron drip line.**
 
-> **New here?** Start with [docs/START_HERE.md](docs/START_HERE.md). Every term
+> **New here?** Start with [docs/Introduction.md](docs/Introduction.md). Every term
 > is explained in [docs/GLOSSARY.md](docs/GLOSSARY.md), and every choice in
 > [docs/DECISIONS.md](docs/DECISIONS.md).
 
@@ -148,4 +148,4 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 
 Open `drip_line.ipynb` in Google Colab (Runtime → Change runtime type → R) or in
 Jupyter with an R kernel, and run all cells from the top, in order. Full steps
-are in [docs/START_HERE.md](docs/START_HERE.md).
+are in [docs/START_HERE.md](docs/Introduction.md).
