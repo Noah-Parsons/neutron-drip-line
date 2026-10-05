@@ -2,8 +2,8 @@
 
 **A quantified study of nuclear mass models and the neutron drip line.**
 
-> **New here?** Start with [docs/Introduction.md](docs/Introduction.md). Every term
-> is explained in [docs/GLOSSARY.md](docs/GLOSSARY.md), and every choice in
+> **New here?** Start with [docs/Introduction.md](docs/Introduction.md). Terms
+> are explained in [docs/GLOSSARY.md](docs/GLOSSARY.md), and choices in
 > [docs/DECISIONS.md](docs/DECISIONS.md).
 
 ## The question
