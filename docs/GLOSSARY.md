@@ -197,3 +197,37 @@ measured in AME2020 but not in AME2003.
 
 **Tail (of a distribution):** the rare large values. A method can have a good
 median and a terrible tail, and for the drip line the tail is what matters.
+
+---
+
+*Added in Phases 5b to 8:*
+
+**Calibrated (of an uncertainty):** checked against data the method never saw, and
+found to cover about the fraction it claims. An uncertainty that has never been
+calibrated is a guess with a number attached.
+
+**Confound:** something that moves with the thing you are measuring and could
+explain your result instead. In Phase 6 the better models are also the more
+recently fitted ones, and one test set cannot separate those.
+
+**Drift:** a steady movement in one direction, as opposed to scatter. The fitted
+constants drift; they do not jitter. It matters because drift accumulates and
+scatter partly cancels.
+
+**Hold-out:** hiding part of a dataset, predicting it, and using the error as an
+estimate of how well the method extrapolates. Phase 5b measures how much this
+flatters a method: about 1.6 times.
+
+**Independent (of two splits or two methods):** not built from the same data. Two
+methods that share an input agree with each other whether or not they are right,
+which is why their agreement is not evidence.
+
+**Monotone:** moving the same direction every time.
+
+**S2n uncertainty:** the error on the *difference* between two binding energies. It
+is much smaller than the error on either one, because a method's mistakes on
+neighbouring nuclei point the same way.
+
+**Time split:** fitting to an old edition of a dataset and testing on what was added
+later. Unlike a hold-out it cannot be gamed, because the test data did not exist when
+the method was built.

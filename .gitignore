@@ -9,6 +9,8 @@
 *.mas83
 mass16.txt
 mass16round.txt
+Table2.xlsx
+t2x/
 data/
 
 # The project manual stays private

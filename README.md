@@ -2,9 +2,17 @@
 
 **A quantified study of nuclear mass models and the neutron drip line.**
 
-> **New here?** Start with [docs/Introduction.md](docs/Introduction.md). Terms
-> are explained in [docs/GLOSSARY.md](docs/GLOSSARY.md), and choices in
+> **The findings are in [docs/PHASE_8.md](docs/PHASE_8.md).** New here? Start with
+> [docs/Introduction.md](docs/Introduction.md). Terms are explained in
+> [docs/GLOSSARY.md](docs/GLOSSARY.md), and choices in
 > [docs/DECISIONS.md](docs/DECISIONS.md).
+
+**All eight phases are complete.** The short version: for a mid-mass element the
+honest band on the drip line is about **twenty isotopes wide**, and the most accurate
+method here cannot reach the drip line at all above neon. Along the way the usual way
+of quoting uncertainty on a fitted mass formula was found to understate the real
+movement of its constants by **seven to ten times**, and the usual way of estimating
+how far a method extrapolates was found to flatter it by about **1.6**.
 
 ## The question
 
@@ -50,9 +58,9 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | 4 | Garvey–Kelson relations | **done**: [docs/PHASE_4.md](docs/PHASE_4.md) |
 | 5 | Blind test: fit to AME2003, predict nuclei measured since | **done**: [docs/PHASE_5.md](docs/PHASE_5.md) |
 | 5b | The same test on all six AME editions since 1993 | **done**: [docs/PHASE_5B.md](docs/PHASE_5B.md) |
-| 6 | Compare the published models on the same test | to do |
-| 7 | The drip line as a probability band | to do |
-| 8 | Write up | to do |
+| 6 | Compare the published models on the same test | **done**: [docs/PHASE_6.md](docs/PHASE_6.md) |
+| 7 | The drip line as a probability band | **done**: [docs/PHASE_7.md](docs/PHASE_7.md) |
+| 8 | Write up | **done**: [docs/PHASE_8.md](docs/PHASE_8.md) |
 
 ## Results so far
 
@@ -169,8 +177,36 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   the drift has not stopped. It predicts the next edition will move all four the same
   way again.
 
+**The published models (Phase 6)** — all seven predictors on the 51 nuclei first
+measured after AME2016
+- **The AME evaluators' own extrapolations win**: 0.29 MeV rms, ahead of WS4 at 0.35
+  and every other published model at 0.79 or worse. The numbers people actually look
+  up are the best numbers available.
+- **The Garvey–Kelson chains are competitive with modern global models**: 0.35 MeV
+  against WS4's 0.36, HFB-21's 0.70, FRDM(2012)'s 0.77. A parameter-free relation from
+  1966 in a few dozen lines of R. It is silent on 11 of the 51, which they never are.
+- The five-term formula is **8 to 18 times worse** than anything published.
+- **The six-term formula is worse than the five-term one** (median miss 3.01 against
+  0.63), which contradicts Phase 3's conclusion that the shell correction helps far
+  from stability. Phase 3's evidence was an AME2020 hold-out; this is real unseen data.
+- **The AME's stated uncertainties are the only well-calibrated ones in the project**:
+  73 % inside 1σ, 100 % inside 2σ. Disagreement between independent models is also
+  usable — 90 % inside half the spread.
+
+**The drip line (Phase 7)**
+- σ on **S2n** is a third of σ on binding energy (1.44 against 3.87 MeV for the
+  formula), because a method wrong about one nucleus is wrong about its neighbour the
+  same way. Without that, nothing could be said at all.
+- **Band width: median 18 neutrons**, and the line sits **35 neutrons past the
+  measured edge** on average — far beyond the twelve chained steps where the relations
+  stop winning, so **they cannot reach the drip line above neon**.
+- Where the answer is known the band gets all three measured unbound nuclei right, but
+  with predicted S2n 2 to 9 MeV off, so it is right for the wrong reason.
+- **7,100 to 9,000 bound nuclei** on the neutron-rich side of Z = 8–110, a spread of
+  about 1,900, against a published figure near 7,000 with a spread of a few hundred.
+
 ## How to run it
 
 Open `drip_line.ipynb` in Google Colab (Runtime → Change runtime type → R) or in
 Jupyter with an R kernel, and run all cells from the top, in order. Full steps
-are in [docs/START_HERE.md](docs/Introduction.md).
+are in [docs/Introduction.md](docs/Introduction.md).

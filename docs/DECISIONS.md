@@ -332,3 +332,48 @@ reproduces the whole 9σ and A moves nothing, which settles it.
 **Known limit:** B uses 2020 values for nuclei whose 1993 values were worse known,
 so it is a counterfactual rather than history. It answers "would the set change
 alone have done this?", which is the question that matters here.
+
+---
+
+*D24–D26 cover Phases 6 and 7.*
+
+### D24. Shell closures above the measured range (Phase 7)
+
+**Chose:** the shell term needs a magic number above the one a nucleus sits in, and
+the drip line for heavy elements runs past N = 184. **258** is used as the next
+neutron closure above 184, and **184** as the next proton closure above 126.
+**Why:** they are the standard theoretical predictions and the six-term line cannot
+be drawn without them.
+**Known limit:** no nucleus has ever been measured at either. Every six-term number in
+Phase 7 depends on them, and the five-term line does not, which is one reason both are
+reported.
+
+### D25. Handling the publication-date problem (Phase 6)
+
+**Chose:** test every model on nuclei measured in AME2020 but not in AME2016, so that
+every test nucleus was unmeasured when every model was fitted. Report each model's
+vintage beside its score.
+**Why:** a model published after a nucleus was measured may have been fitted to it.
+Restricting to post-2016 measurements removes that for all seven predictors at once.
+**Known limit:** the models were still fitted at different dates with different amounts
+of data, and the best two are the most recently fitted. That confound needs a test set
+postdating all of them equally, which does not exist. It is reported, not corrected.
+**Source:** the six models and the AME2016 extrapolations come from the comparison
+table behind Huang et al., *Scientific Data* **9**, 532 (2022), figshare collection
+5640763, Data set 2. The FRDM(2012) table could not be fetched from its own Los Alamos
+page — the host is unreachable — so its values are the ones that paper tabulates.
+
+### D26. The uncertainty the band uses (Phase 7)
+
+**Chose:** σ(S2n) measured directly on blind tests — the 2003→2020 and 1995→2003
+splits pooled — rather than propagated from σ(B).
+**Why:** the drip line is decided by a difference of two binding energies, and a
+method's errors on neighbouring nuclei are strongly correlated, so σ(S2n) is about a
+third of σ(B). Propagating σ(B) as if the two were independent would overstate it by
+a factor of three and make the band useless.
+**No 1.6 correction is applied** (the Phase 5b factor): these are already real
+blind-test errors, and that factor converts a hold-out estimate into a real one.
+Applying it would count the same correction twice.
+**Known limit, and the largest in the phase:** σ(S2n) is measured one to four neutrons
+past the frontier and applied at thirty. Nothing in any AME edition can test that
+extrapolation, because the measurements needed do not exist.
