@@ -1,17 +1,13 @@
 # Phases 0 and 1: building and checking the dataset
 
-**Goal:** a clean table of every nucleus that has **actually been measured**,
-with its binding energy and separation energies, checked against the official
+Building a clean table of every nucleus that has actually been measured, with its
+binding energy and separation energies, and checking all of it against the AME's own
 numbers.
 
-**Status:** done.
-
----
-
-## Step 1: get the data
+## Get the data
 
 The notebook downloads `mass_1.mas20.txt`, the AME2020 mass table. It's a plain
-text file, but with no commas. Each value sits at **fixed character positions**
+text file, but with no commas. Each value sits at fixed character positions
 on the line, as listed in the file's header.
 
 | characters | contents |
@@ -23,9 +19,9 @@ on the line, as listed in the file's header.
 | 43–54 | its uncertainty, keV |
 | 55–67 | the AME's own binding energy per nucleon (used only for checking) |
 
-## Step 2: throw out the guesses
+## Throw out the guesses
 
-Some numbers in the file are **not measurements**. The AME team estimated them,
+Some numbers in the file are not measurements. The AME team estimated them,
 and marked them with `#`. If we kept them, we would be fitting our formula to
 someone else's formula, not to nature.
 
@@ -35,29 +31,29 @@ someone else's formula, not to nature.
 | **estimates, removed** | **1,008** |
 | **measured, kept** | **2,550** |
 
-## Step 3: binding energy
+## Binding energy
 
 From the mass excess Δ, the binding energy is
 
 > B = Z × 7288.971 keV + N × 8071.318 keV − Δ
 
 The two numbers are the mass excess of a hydrogen atom and of a free neutron.
-We use **hydrogen atom** rather than a bare proton because the tables list
+We use hydrogen atom rather than a bare proton because the tables list
 whole-atom masses, including electrons. Each hydrogen atom brings one electron,
 so the electrons cancel out.
 
-## Step 4: check it (Phase 0)
+## Check it (Phase 0)
 
 **Iron-56, by hand:** 8790.356 keV per nucleon. The manual expects about 8790.
 ✔
 
-**Every nucleus:** our B/A minus the AME's own B/A is at most **0.0001 keV**,
-for all 2,550 nuclei. The small difference is just rounding. **No nucleus is
-off by even 1 keV.** ✔
+**Every nucleus:** our B/A minus the AME's own B/A is at most 0.0001 keV,
+for all 2,550 nuclei. The small difference is just rounding. No nucleus is
+off by even 1 keV. ✔
 
 This single check proves the parsing, the units and the signs are all right.
 
-## Step 5: the binding energy curve
+## The binding energy curve
 
 Plotting B/A against A gives the famous curve: a steep rise, a peak, then a slow
 decline.
@@ -74,7 +70,7 @@ The top three nuclei:
 is iron-56 that has the lowest mass *per nucleon*, which is a slightly different
 measure, and that's where the popular claim comes from.
 
-## Step 6: separation energies
+## Separation energies
 
 - **Sn** = B(this nucleus) − B(one fewer neutron)
 - **S2n** = B(this nucleus) − B(two fewer neutrons)
@@ -87,7 +83,7 @@ one:
 | Sn computable | 2,393 of 2,550 |
 | S2n computable | 2,301 of 2,550 |
 
-## Step 7: the cross-check
+## The cross-check
 
 The AME team publish their own S2n values in a second file, `rct1.mas20.txt`. We
 read it and lined it up nucleus by nucleus with ours.
@@ -105,9 +101,9 @@ file prints four decimal places.)
 We didn't separately check Sn, which is listed in a third file, `rct2`. Sn uses
 the same binding energies and the same kind of lookup, both confirmed above.
 
-## Step 8: nuclei already past the drip line
+## Nuclei already past the drip line
 
-Nine measured nuclei have **negative S2n**. They can't hold their last two
+Nine measured nuclei have negative S2n. They can't hold their last two
 neutrons; they exist for an instant as short-lived resonances.
 
 | nucleus | Z | N | S2n (keV) |

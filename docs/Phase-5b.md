@@ -1,16 +1,14 @@
 # Phase 5b: the same test, on every edition
 
-**Goal:** run the Phase 5 blind test five more times, on every pair of AME editions
-since 1993, and find out which of its results were properties of the method and
-which were accidents of one pair of editions.
-
-**Status:** done.
+The Phase 5 blind test, run five more times on every pair of AME editions since
+1993, to find out which of its results were properties of the method and which were
+accidents of one pair of editions.
 
 Not in the manual's phase list. It exists because Phase 5 produced three claims a
 single split could not support, and the AME has been reissued six times since 1993
 with every edition dated.
 
-Decisions D21–D23 in [DECISIONS.md](DECISIONS.md).
+Decisions D21–D23 in [Decisions.md](Decisions.md).
 
 ---
 
@@ -27,7 +25,7 @@ Decisions D21–D23 in [DECISIONS.md](DECISIONS.md).
 
 The column layout changed twice — the mass excess field was widened in 2003 and
 again in 2020 — and before 2003 the tabulated binding energy is the total rather
-than per nucleon. Each edition's binding energies are built from **its own**
+than per nucleon. Each edition's binding energies are built from its own
 hydrogen and neutron mass excesses, read out of the same file, so no edition
 borrows a constant from another. Checks: the tabulated binding energy is
 reproduced to 0.035 keV or better in every edition, and the new general reader
@@ -55,9 +53,9 @@ The Garvey–Kelson relations beat the formula on every split without exception,
 factors of 5 to 13 in the rms. That part of Phase 4 and Phase 5 holds up
 everywhere.
 
-## Result 1: the hold-out is optimistic every time — but by 1.6, not 2
+## The hold-out is optimistic every time — but by 1.6, not 2
 
-For each split, compare what a hold-out **on the earlier edition** predicted the
+For each split, compare what a hold-out on the earlier edition predicted the
 error would be against what it turned out to be, at matched chain length. That is
 the honest version: it is what somebody standing in 1993, or 2003, could actually
 have computed. Phase 5 compared against a hold-out on AME2020, the finished chart,
@@ -74,8 +72,8 @@ which nobody in 2003 could have done.
 | 03→20 | 17 yr | 4 | 2.04 | no |
 | 93→20 | 27 yr | 4 | 2.24 | no |
 
-**The phenomenon replicates.** The hold-out underestimated the real error in **20 of
-22** round-level comparisons and in all five independent splits.
+**The phenomenon replicates.** The hold-out underestimated the real error in 20 of
+22 round-level comparisons and in all five independent splits.
 
 **The size is 1.6, not 2.** The five independent splits run 1.25 to 1.79, median
 1.57. The 2.2 reported in Phase 5 came from one long split and is the top of the
@@ -84,14 +82,14 @@ range, not the typical value.
 **The trend with gap length is not there.** The long splits do look worse, which is
 what suggested a trend. But they are built out of the short ones — 93→20 contains
 all five — so they are the same data counted again. Across the five independent
-splits the correlation of optimism with gap length is **0.02**. With five points
+splits the correlation of optimism with gap length is 0.02. With five points
 there is no evidence either way, and the apparent trend was an artefact of
 overlapping data.
 
 So the correction Phase 5 recommended for Phase 7 — double the Phase 4 curve — is
 roughly right but on the pessimistic side. A factor of 1.6 is better supported.
 
-## Result 2: the blind-test penalty is not a property of the formula
+## The blind-test penalty is not a property of the formula
 
 | split | gap | nuclei | fit rms | test rms | penalty | bias |
 |---|---|---|---|---|---|---|
@@ -101,8 +99,8 @@ roughly right but on the pessimistic side. A factor of 1.6 is better supported.
 | 12→16 | 4 yr | 59 | 3.12 | 4.73 | 1.51 | +2.06 |
 | 16→20 | 4 yr | 73 | 3.17 | 5.39 | 1.70 | +1.52 |
 
-(MeV.) This claim does not survive. **On both pre-2003 splits the penalty is below
-one:** the formula predicted the newly measured nuclei *better* than it fitted the
+(MeV.) This claim does not survive. On both pre-2003 splits the penalty is below
+one: the formula predicted the newly measured nuclei *better* than it fitted the
 nuclei it was built from. From 2003 onward it climbs to 1.48, 1.51, 1.70.
 
 "The formula is 1.65 times worse out of sample" is therefore a fact about where
@@ -110,11 +108,11 @@ experiments went after 2003, not a fact about the formula. In the 1990s new
 measurements mostly filled in near stability and flattered it. Since then they have
 pushed outward into the region where it fails.
 
-What *is* steady across all eight splits is the **sign of the bias**: between +0.9
+What *is* steady across all eight splits is the sign of the bias: between +0.9
 and +2.1 MeV every time. Newly measured nuclei are consistently more bound than the
 formula of the day predicted. That turns out to matter more than the penalty ratio.
 
-## Result 3: the constants drift, and Phase 5 understated it
+## The constants drift, and Phase 5 understated it
 
 | edition | a_V | a_S | a_C | a_A | a_P |
 |---|---|---|---|---|---|
@@ -150,7 +148,7 @@ on a pattern nobody went looking for.
 The pairing term is the exception throughout. It is so poorly determined (±0.9 MeV
 on a value near 12) that its quoted error already covers everything it does.
 
-## Result 4: the drift comes from new nuclei, not corrected ones
+## The drift comes from new nuclei, not corrected ones
 
 Two things changed between editions: the set of nuclei grew, and some masses already
 in the table were revised. Separate them.
@@ -173,7 +171,7 @@ constants by a tenth of a standard error over twenty-seven years. Adding new nuc
 moves them by nine. This is not the AME correcting old mistakes; the old numbers
 were fine.
 
-## Result 5: the mechanism
+## The mechanism
 
 Of the 635 nuclei added to the A ≥ 20 fit set between 1993 and 2020, the 1993
 formula misses them by 4.09 MeV rms against 3.04 MeV on its own fit set, with a mean
@@ -186,8 +184,8 @@ miss of +1.24 MeV. Splitting them at the upper quartile of |miss|:
 
 Three quarters of the new nuclei scatter evenly around the old formula and do it no
 harm. The remaining quarter is missed by 4 MeV on average, and 80 % of those misses
-are the same sign. **A minority of nuclei the formula cannot describe, all wrong in
-one direction, drags every constant the same way each time a new edition appears.**
+are the same sign. A minority of nuclei the formula cannot describe, all wrong in
+one direction, drags every constant the same way each time a new edition appears.
 
 | | a_V | a_S | a_C | a_A |
 |---|---|---|---|---|

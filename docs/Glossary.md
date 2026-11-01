@@ -28,7 +28,7 @@ predicts data it never saw. It is the only way to tell a model that
 *understands* nuclei from one that has just *memorised* the table.
 
 **χ²/dof (chi-squared per degree of freedom):** a single number saying how well
-a fit matches the data **compared with the error bars**. About 1 means "misses
+a fit matches the data compared with the error bars. About 1 means "misses
 by exactly as much as the measurement errors". Much bigger than 1 means the
 model is missing something real.
 
@@ -50,7 +50,7 @@ by for that nucleus.
 **Drip line (neutron drip line):** the edge of existence. For each element, it's
 the heaviest isotope that can still hold on to its neutrons.
 
-**Estimated value (extrapolated value):** a number in the AME that is **not** a
+**Estimated value (extrapolated value):** a number in the AME that is not a
 measurement. It is a guess made by the AME team, marked with `#`. This project
 throws all of them out.
 
@@ -96,8 +96,8 @@ one nucleus.
 average, then square-root.
 
 **S2n (two-neutron separation energy):** the energy needed to remove the last
-two neutrons. **Positive: the nucleus holds them. Negative: it can't, so it's
-past the drip line.**
+two neutrons. Positive: the nucleus holds them. Negative: it can't, so it's
+past the drip line.
 
 **Sn (one-neutron separation energy):** the same, for one neutron.
 
@@ -113,8 +113,8 @@ nucleus, which have fewer neighbours and so are held less tightly.
 **Volume term:** the biggest part of the formula. Every particle adds roughly
 the same binding.
 
-**Weighting:** deciding how much each nucleus counts in the fit. **Uniform**
-weighting: all equal. **Inverse-variance** weighting: precisely measured nuclei
+**Weighting:** deciding how much each nucleus counts in the fit. Uniform
+weighting: all equal. Inverse-variance weighting: precisely measured nuclei
 count more.
 
 **Z (atomic number):** the number of protons. It decides which element it is.
@@ -149,11 +149,11 @@ their errors grow with every step outward.
 
 **Garvey–Kelson relation:** a rule saying that six particular nuclei, close
 together on the chart, have binding energies that cancel out to nearly zero when
-added with alternating signs. Two arrangements work: the **transverse** and the
+added with alternating signs. Two arrangements work: the transverse and the
 **longitudinal** relation. Published by Garvey and Kelson in 1966.
 
 **Global model:** a single formula fitted to the whole chart at once, like the
-five- and six-term formulas here. The opposite of a **local relation**.
+five- and six-term formulas here. The opposite of a local relation.
 
 **Local relation:** a rule that only involves nuclei sitting next to each other.
 It says nothing about the chart as a whole, and it is far more accurate where it

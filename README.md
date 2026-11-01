@@ -2,23 +2,23 @@
 
 **A quantified study of nuclear mass models and the neutron drip line.**
 
-> **The findings are in [docs/PHASE_8.md](docs/PHASE_8.md).** New here? Start with
+> The findings are in [docs/Findings.md](docs/Findings.md). New here? Start with
 > [docs/Introduction.md](docs/Introduction.md). Terms are explained in
-> [docs/GLOSSARY.md](docs/GLOSSARY.md), and choices in
-> [docs/DECISIONS.md](docs/DECISIONS.md).
+> [docs/Glossary.md](docs/Glossary.md), and choices in
+> [docs/Decisions.md](docs/Decisions.md).
 
 **All eight phases are complete.** The short version: for a mid-mass element the
-honest band on the drip line is about **twenty isotopes wide**, and the most accurate
+honest band on the drip line is about twenty isotopes wide, and the most accurate
 method here cannot reach the drip line at all above neon. Along the way the usual way
 of quoting uncertainty on a fitted mass formula was found to understate the real
-movement of its constants by **seven to ten times**, and the usual way of estimating
-how far a method extrapolates was found to flatter it by about **1.6**.
+movement of its constants by seven to ten times, and the usual way of estimating
+how far a method extrapolates was found to flatter it by about 1.6.
 
 ## The question
 
 Take an atom and keep adding neutrons to its centre. For a while it holds on to
 them. Then, at some point, one more neutron falls back out. That
-edge is called the **neutron drip line**. Past it, that version of the element
+edge is called the neutron drip line. Past it, that version of the element
 cannot exist.
 
 Nobody has measured where that edge is for most elements. Scientists have
@@ -38,9 +38,9 @@ measured later, and a drip line given as a probability instead of a single line.
 
 ## Data
 
-The measured masses come from the **Atomic Mass Evaluation**, free from the IAEA:
+The measured masses come from the Atomic Mass Evaluation, free from the IAEA:
 <https://www-nds.iaea.org/amdc/>. The notebook downloads the files itself, so they
-are not stored here. The **2020** edition supplies the measurements; the **2003**
+are not stored here. The 2020 edition supplies the measurements; the 2003
 edition supplies the blind test of Phase 5.
 
 Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
@@ -52,26 +52,26 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | Phase | What | Status |
 |---|---|---|
 | 0 | Check the units: iron-56 comes out at ~8790 keV per nucleon | done |
-| 1 | Build the clean dataset, binding energy curve, separation energies | **done**: [docs/PHASE_1.md](docs/PHASE_1.md) |
-| 2 | Fit the five-term formula, with its covariance matrix | **done**: [docs/PHASE_2.md](docs/PHASE_2.md) |
-| 3 | Leftovers (residuals) and a shell correction | **done**: [docs/PHASE_3.md](docs/PHASE_3.md) |
-| 4 | Garvey–Kelson relations | **done**: [docs/PHASE_4.md](docs/PHASE_4.md) |
-| 5 | Blind test: fit to AME2003, predict nuclei measured since | **done**: [docs/PHASE_5.md](docs/PHASE_5.md) |
-| 5b | The same test on all six AME editions since 1993 | **done**: [docs/PHASE_5B.md](docs/PHASE_5B.md) |
-| 6 | Compare the published models on the same test | **done**: [docs/PHASE_6.md](docs/PHASE_6.md) |
-| 7 | The drip line as a probability band | **done**: [docs/PHASE_7.md](docs/PHASE_7.md) |
-| 8 | Write up | **done**: [docs/PHASE_8.md](docs/PHASE_8.md) |
+| 1 | Build the clean dataset, binding energy curve, separation energies | **done**: [docs/Phase-1.md](docs/Phase-1.md) |
+| 2 | Fit the five-term formula, with its covariance matrix | **done**: [docs/Phase-2.md](docs/Phase-2.md) |
+| 3 | Leftovers (residuals) and a shell correction | **done**: [docs/Phase-3.md](docs/Phase-3.md) |
+| 4 | Garvey–Kelson relations | **done**: [docs/Phase-4.md](docs/Phase-4.md) |
+| 5 | Blind test: fit to AME2003, predict nuclei measured since | **done**: [docs/Phase-5.md](docs/Phase-5.md) |
+| 5b | The same test on all six AME editions since 1993 | **done**: [docs/Phase-5b.md](docs/Phase-5b.md) |
+| 6 | Compare the published models on the same test | **done**: [docs/Phase-6.md](docs/Phase-6.md) |
+| 7 | The drip line as a probability band | **done**: [docs/Phase-7.md](docs/Phase-7.md) |
+| 8 | Write up | **done**: [docs/Findings.md](docs/Findings.md) |
 
 ## Results so far
 
 **The dataset (Phase 1)**
-- AME2020 lists 3,558 nuclei. **1,008 are estimates, not measurements**
-  (marked `#`), and were removed. **2,550 measured nuclei remain.**
+- AME2020 lists 3,558 nuclei. 1,008 are estimates, not measurements
+  (marked `#`), and were removed. 2,550 measured nuclei remain.
 - Binding energies agree with the AME's own values to 0.0001 keV for every
   nucleus.
 - Our two-neutron separation energies (S2n) match the AME's published ones for
   **all 2,301 nuclei**, to within 0.001 keV. The same nuclei have values in both.
-- The most tightly bound nucleus is **nickel-62** (8794.56 keV per nucleon),
+- The most tightly bound nucleus is nickel-62 (8794.56 keV per nucleon),
   ahead of iron-58 and iron-56.
 - 9 measured nuclei, all light (hydrogen to oxygen), have negative S2n: they
   are already past the drip line.
@@ -86,21 +86,21 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | asymmetry a_A | 22.62 ± 0.06 |
 | pairing a_P | 12.2 ± 0.9 |
 
-- Typical miss: **3.2 MeV**.
+- Typical miss: 3.2 MeV.
 - **The error bars are not the whole story.** Changing only how nuclei are
-  weighted moves the constants by **12–16 times their error bars**. Several
+  weighted moves the constants by 12–16 times their error bars. Several
   equally reasonable choices give different answers, which is also why published
   values disagree.
 - Volume and surface are correlated at 0.99, so the full covariance matrix is
   kept for later phases.
 - The misses spike at the magic numbers 50, 82 and 126. They are biggest (up to
-  27 MeV) for very neutron-rich light nuclei, **right at the drip line**.
+  27 MeV) for very neutron-rich light nuclei, right at the drip line.
 
 **The shell correction (Phase 3)**
-- Searching the misses for peaks finds the magic numbers **28, 50, 82 and 126**
+- Searching the misses for peaks finds the magic numbers 28, 50, 82 and 126
   on its own, without being told where to look.
 - A sixth term for shell structure (a_sh = −0.506 ± 0.013 MeV) cuts the typical
-  miss from **3.24 to 2.56 MeV (21 %)**. It fixes the big shells (50, 82, 126)
+  miss from 3.24 to 2.56 MeV (21 %). It fixes the big shells (50, 82, 126)
   but makes the small ones (20, 28) worse.
 - **Far from stability:** with each element's 4 most neutron-rich isotopes
   hidden, the six-term formula predicts them better at every step outward (rms
@@ -113,8 +113,8 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   **two** cancel: the transverse and longitudinal relations. The other four are ten
   times worse, so a mistyped index would have been obvious. The published
   transverse form is reproduced to 2×10⁻¹⁰ keV.
-- Where all six masses are measured, the median miss is **109–116 keV against
-  2,564 keV for the six-term formula** — about twenty times better. The rms is five
+- Where all six masses are measured, the median miss is 109–116 keV against
+  2,564 keV for the six-term formula — about twenty times better. The rms is five
   times the median, though: the tail is heavy, and below A = 20 the relations are
   barely better than the formula.
 - **Predicting the hidden neutron-rich edge** (the Phase 3 hold-out): 0.58 MeV rms
@@ -124,7 +124,7 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   inherits its neighbours' mistakes.
 - **They stop winning at about twelve chained steps**, where the six-term formula
   overtakes them. For most heavy elements the drip line is further out than that.
-- 17 of 364 hidden nuclei **cannot be reached at all**. The global formula always
+- 17 of 364 hidden nuclei cannot be reached at all. The global formula always
   returns something; the relations sometimes return nothing.
 - Two obvious error bars on a chained prediction both fail: propagating the
   relation's scatter is exponentially too wide (96 % inside 1σ, 710 MeV by twenty
@@ -134,7 +134,7 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 **The blind test (Phase 5)** — fit to AME2003, predict the 326 nuclei measured since
 - **The formula is 1.65 times worse on nuclei it has not seen**: 2.98 MeV rms on the
   2,143 it was fitted to, 4.90 MeV on the 326 it was not. The median error is
-  1.72 MeV, so the rms is carried by a tail. The mean error is **+1.29 MeV** — the
+  1.72 MeV, so the rms is carried by a tail. The mean error is +1.29 MeV — the
   new nuclei are systematically *more* bound than predicted.
 - **Four of the five constants moved by more than five of their own 2003 standard
   errors** between the editions (volume 6.4σ, surface 6.9σ). Those error bars were
@@ -155,11 +155,11 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 
 **Every edition, not just one split (Phase 5b)** — the blind test run six times
 - **The hold-out is optimistic every time** (20 of 22 comparisons, all five
-  independent splits) but by **1.57**, not the 2.2 of Phase 5. And there is **no
-  trend with the length of the gap** (r = 0.02); the apparent trend came from
+  independent splits) but by 1.57, not the 2.2 of Phase 5. And there is no
+  trend with the length of the gap (r = 0.02); the apparent trend came from
   overlapping splits sharing their data.
 - **The 1.65 penalty is not a property of the formula.** On the two pre-2003 splits
-  it is **0.92** — the formula predicted the new nuclei better than it fitted its own
+  it is 0.92 — the formula predicted the new nuclei better than it fitted its own
   set. It climbs past 1.5 only from 2003, as experiments pushed outward.
 - **The constants drift one way, every time.** No single step between neighbouring
   editions exceeds 3.2σ, but all five steps move volume, surface, Coulomb and
@@ -170,7 +170,7 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   twenty-seven years; holding the values fixed and letting the set grow reproduces
   the whole 9σ.
 - **The mechanism:** of the 635 nuclei added since 1993, the worst quarter is missed
-  by **+4.27 MeV on average with 80 % the same sign**, while the other three quarters
+  by +4.27 MeV on average with 80 % the same sign, while the other three quarters
   scatter evenly. A minority the formula cannot describe, all wrong one way, drags
   every constant each time.
 - **An honest error bar would be 7 to 10 times wider**, and that is a floor, because
@@ -185,7 +185,7 @@ measured after AME2016
 - **The Garvey–Kelson chains are competitive with modern global models**: 0.35 MeV
   against WS4's 0.36, HFB-21's 0.70, FRDM(2012)'s 0.77. A parameter-free relation from
   1966 in a few dozen lines of R. It is silent on 11 of the 51, which they never are.
-- The five-term formula is **8 to 18 times worse** than anything published.
+- The five-term formula is 8 to 18 times worse than anything published.
 - **The six-term formula is worse than the five-term one** (median miss 3.01 against
   0.63), which contradicts Phase 3's conclusion that the shell correction helps far
   from stability. Phase 3's evidence was an AME2020 hold-out; this is real unseen data.
@@ -194,12 +194,12 @@ measured after AME2016
   usable — 90 % inside half the spread.
 
 **The drip line (Phase 7)**
-- σ on **S2n** is a third of σ on binding energy (1.44 against 3.87 MeV for the
+- σ on S2n is a third of σ on binding energy (1.44 against 3.87 MeV for the
   formula), because a method wrong about one nucleus is wrong about its neighbour the
   same way. Without that, nothing could be said at all.
-- **Band width: median 18 neutrons**, and the line sits **35 neutrons past the
-  measured edge** on average — far beyond the twelve chained steps where the relations
-  stop winning, so **they cannot reach the drip line above neon**.
+- **Band width: median 18 neutrons**, and the line sits 35 neutrons past the
+  measured edge on average — far beyond the twelve chained steps where the relations
+  stop winning, so they cannot reach the drip line above neon.
 - Where the answer is known the band gets all three measured unbound nuclei right, but
   with predicted S2n 2 to 9 MeV off, so it is right for the wrong reason.
 - **7,100 to 9,000 bound nuclei** on the neutron-rich side of Z = 8–110, a spread of

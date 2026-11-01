@@ -1,10 +1,8 @@
 # Phase 5: the blind test
 
-**Goal:** fit only to what was known in 2003, predict the nuclei measured since, and
-find out how much of the accuracy reported in Phases 2–4 survives contact with data
-the models never saw.
-
-**Status:** done.
+Fit only to what was known in 2003, predict the nuclei measured since, and find out
+how much of the accuracy reported in Phases 2–4 survives contact with data the
+models never saw.
 
 This is the phase the manual calls the central methodological move. The rules were
 fixed in Phase 2, as D8, long before it was run: nothing from after the cutoff may
@@ -51,7 +49,7 @@ moves no constant by more than 0.081 MeV and changes the test rms from 4.90 to
 Only the 182 test extrapolation toward the drip line. They sit 1 to 7 neutrons past
 the 2003 edge, and 173 of them within 4.
 
-## Result 1: the formula is 1.65 times worse on nuclei it has not seen
+## The formula is 1.65 times worse on nuclei it has not seen
 
 | formula | weighting | fit rms | test rms | test median | neutron-rich | gap fill |
 |---|---|---|---|---|---|---|
@@ -66,7 +64,7 @@ the 2003 edge, and 173 of them within 4.
 | six | floor 10 keV | 2.37 | 5.70 | 3.17 | 6.95 | 3.45 |
 | six | floor 1 keV | 2.40 | 5.69 | 3.11 | 6.97 | 3.43 |
 
-(rms error in MeV.) **Every six-term number here is not blind** and is labelled so
+(rms error in MeV.) Every six-term number here is not blind and is labelled so
 (D19): the shell term's shape was chosen by looking at AME2020 residuals, which
 include these test nuclei. Only its constant was refitted on 2003 data. It is
 reported alongside, not as a result.
@@ -74,10 +72,10 @@ reported alongside, not as a result.
 Reporting a fit residual as though it were a prediction error would have understated
 the error by a factor of 1.65.
 
-> **Corrected by Phase 5b.** That 1.65 is not a property of the formula. On the
-> 1993→1995 and 1995→2003 splits the penalty is **0.92** — the formula predicted the
-> new nuclei better than it fitted its own set. It climbs above 1.5 only from 2003 on.
-> See [PHASE_5B.md](PHASE_5B.md), Result 2.
+Phase 5b later undercut that number. Run on the 1993→1995 and 1995→2003 splits the
+penalty is 0.92 — the formula predicted the new nuclei better than it fitted its own
+set — and it climbs above 1.5 only from 2003 on. So 1.65 describes where experiments
+went after 2003, not the formula. See [Phase-5b.md](Phase-5b.md).
 
 Two details matter more than the ratio:
 
@@ -91,7 +89,7 @@ The weighting order is the same as in Phase 2 — uniform and the 1,000 keV floo
 the 1 keV floor worst — which is at least consistent with D6 having been right for the
 right reason.
 
-## Result 2: the constants did not stay inside their error bars
+## The constants did not stay inside their error bars
 
 | | a_V | a_S | a_C | a_A | a_P |
 |---|---|---|---|---|---|
@@ -105,19 +103,19 @@ bars had already been inflated by χ²/dof — a correction of a factor of hundr
 they are still far too small to cover what seventeen years of data actually changed.
 D7 flagged this as its own suspected weakness. It was right.
 
-> **Sharpened by Phase 5b.** Across all six editions no single step between
-> neighbouring editions exceeds 3.2σ. What makes the total large is that **every step
-> goes the same way** for four of the five constants, so they accumulate instead of
-> cancelling: 1993→2020 is −9.1σ, −9.6σ, −8.5σ and −6.7σ. Phase 5b also shows the
-> drift comes entirely from newly added nuclei rather than from old masses being
-> corrected, and identifies the mechanism. See [PHASE_5B.md](PHASE_5B.md),
-> Results 3–5.
+Phase 5b sharpened this one rather than undercutting it. Across all six editions no
+single step between neighbouring editions exceeds 3.2σ, so an edition-to-edition
+check finds nothing. What makes the total large is that every step goes the same way
+for four of the five constants, so they accumulate instead of cancelling: 1993 to
+2020 comes to −9.1σ, −9.6σ, −8.5σ and −6.7σ. Phase 5b also traces the drift to
+newly added nuclei rather than to old masses being corrected, and identifies the
+mechanism. See [Phase-5b.md](Phase-5b.md).
 
 This is the strongest single result in the project so far, and it answers the
 project's question directly. A published constant of the mass formula, quoted with a
 least-squares error bar, does not mean what it appears to mean.
 
-## Result 3: the band on a prediction is right in the middle and wrong in the tail
+## The band on a prediction is right in the middle and wrong in the tail
 
 The band declared in D20 is the constants' covariance carried through the design row,
 plus the fit's own scatter.
@@ -128,7 +126,7 @@ plus the fit's own scatter.
 | six terms, uniform (not blind) | 2.16 | 4.70 | 41 % | 76 % |
 
 A 1σ band should hold about 68 %, a 2σ band about 95 %. The five-term band gets the
-middle of the distribution almost exactly right and **badly misses the tail**: 17 %
+middle of the distribution almost exactly right and badly misses the tail: 17 %
 of the test nuclei — 57 of 326 — fall outside two standard deviations, missing by 6 to
 30 MeV. Those are not unlucky draws from the quoted band. They are nuclei the formula
 does not describe at all.
@@ -145,7 +143,7 @@ than the median error, and it still covers only 36 % of the errors — because t
 weightings mostly disagree in the same direction at once rather than bracketing the
 truth.
 
-## Result 4: where the errors are
+## Where the errors are
 
 Neutron-rich extensions, by distance past the 2003 edge:
 
@@ -176,7 +174,7 @@ By region and direction, five terms, uniform (rms, MeV):
 The light neutron-rich corner is where it collapses, and that is precisely where the
 drip line has actually been reached experimentally.
 
-## Result 5: the Garvey–Kelson relations, blind
+## The Garvey–Kelson relations, blind
 
 Chained outward from everything AME2003 had measured, and asked about the same 326
 nuclei.
@@ -186,7 +184,7 @@ nuclei.
 | Garvey–Kelson chains | 269 of 326 | **0.86** | **0.30** | −0.02 |
 | five-term formula, same 269 | 269 | 4.37 | 1.89 | — |
 
-(MeV.) **Better by a factor of five in the rms and six in the median**, with a mean
+(MeV.) Better by a factor of five in the rms and six in the median, with a mean
 error of −0.02 MeV, so no systematic drift outward. By region the gap is widest where
 the formula is worst:
 
@@ -205,12 +203,12 @@ And by direction:
 | neutron-rich extension | 166 | 0.32 | 0.86 | 4.98 |
 | proton-rich extension | 61 | 0.40 | 1.08 | 2.60 |
 
-The cost is coverage: **57 of the 326 cannot be reached at all**, including all
+The cost is coverage: 57 of the 326 cannot be reached at all, including all
 twelve new-element nuclei, 20 proton-rich extensions, 16 neutron-rich extensions and
 9 gap fills. A chain needs five measured neighbours to start from, and the formula
 will always return something.
 
-## Result 6: Phase 4's calibration was optimistic by a factor of two
+## Phase 4's calibration was optimistic by a factor of two
 
 Phase 4 measured the cost of each chained step on hold-outs cut from AME2020. This is
 the first time that curve meets data it was not built from.
@@ -223,8 +221,8 @@ the first time that curve meets data it was not built from.
 | 4 | 25 | 1.11 | 0.69 | 1.6 | 0.88 |
 | 5 | 12 | 0.76 | 0.75 | 1.0 | 1.19 |
 
-(MeV. Rounds 6 and 7 hold 4 nuclei and 1.) **A steady factor of about two over the
-first three rounds**, which is where 84 % of these nuclei sit.
+(MeV. Rounds 6 and 7 hold 4 nuclei and 1.) A steady factor of about two over the
+first three rounds, which is where 84 % of these nuclei sit.
 
 This is a result about hold-out testing in general, not about these relations. Cutting
 the outer rim off a finished chart leaves a tidy, fully-surrounded edge to predict.
@@ -232,18 +230,18 @@ The real 2003 frontier was ragged, full of gaps, and least precisely measured ex
 where the chains had to start. A hold-out drawn from complete data flattered the
 method by a factor of two.
 
-Used as a 1σ band, the Phase 4 curve holds 51 % rather than 68 %. **Doubling it gives
-68 %.** So Phase 7 carries twice the Phase 4 curve — a correction this phase earned
+Used as a 1σ band, the Phase 4 curve holds 51 % rather than 68 %. Doubling it gives
+68 %. So Phase 7 carries twice the Phase 4 curve — a correction this phase earned
 rather than assumed.
 
-> **Qualified by Phase 5b.** Repeated on every edition pair, the hold-out is
-> optimistic every time (20 of 22 comparisons) but by **1.57** on the five independent
-> splits, not 2.2. The 2.2 here is one long split and the top of the range. There is
-> also **no evidence the optimism grows with the length of the gap**: the correlation
-> across independent splits is 0.02, and the apparent trend came from overlapping
-> data. See [PHASE_5B.md](PHASE_5B.md), Result 1.
+Phase 5b qualified this too. Repeated on every edition pair the hold-out is
+optimistic every time, in 20 of 22 comparisons, but by 1.57 on the five independent
+splits rather than 2.2. The 2.2 here is one long split and the top of the range. Nor
+does the optimism grow with the length of the gap, as this phase suggested it might:
+the correlation across independent splits is 0.02, and the apparent trend came from
+overlapping data. See [Phase-5b.md](Phase-5b.md).
 
-## Result 7: the worst misses, and what the relations do with them
+## The worst misses, and what the relations do with them
 
 | nuclide | direction | formula | relations | rounds |
 |---|---|---|---|---|
@@ -264,7 +262,7 @@ rather than assumed.
 Where the relations reach at all they are wrong by under a MeV on nuclei the formula
 misses by fifteen. The three they cannot reach are the three worst of the lot.
 
-## Result 8: both together
+## Both together
 
 | | rms | median |error| |
 |---|---|---|
@@ -283,7 +281,7 @@ catastrophic in the one corner of the chart that matters for the drip line.
 
 ---
 
-## What Phase 5 gives the rest of the project
+## What this hands on
 
 1. A measured blind-test penalty for the mass formula: 1.65× on rms, with a +1.29 MeV
    bias toward under-binding.
@@ -296,7 +294,7 @@ catastrophic in the one corner of the chart that matters for the drip line.
 5. A factor-of-two correction to the Phase 4 uncertainty curve, which Phase 7 must
    carry.
 
-## Still to do
+## Loose ends
 
 - Phase 6 puts the published models (FRDM2012, HFB, Duflo–Zuker, WS4) through this
   same test set. The publication-date problem has to be handled explicitly: a model

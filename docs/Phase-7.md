@@ -1,13 +1,7 @@
 # Phase 7: the drip line as a probability band
 
-**Goal:** turn everything into a drip line with a probability for every isotope,
-instead of a single line.
-
-**Status:** done.
-
-Decisions D24 and D26 in [DECISIONS.md](DECISIONS.md).
-
----
+Turning everything into a drip line with a probability attached to every isotope
+instead of a single line. See D24 and D26 in [Decisions.md](Decisions.md).
 
 ## The construction
 
@@ -19,7 +13,7 @@ into a probability with the uncertainty the blind tests actually measured:
 
 The line is where that falls through 0.5. The band is where it runs from 0.9 to 0.1.
 
-## Result 1: the uncertainty on S2n, not on B
+## The uncertainty on S2n, not on B
 
 A drip line needs the error on a *difference* of two binding energies, and a method
 wrong about one nucleus is wrong about its neighbour in the same direction. That has
@@ -31,8 +25,8 @@ to be measured, not assumed. Pooling the 2003→2020 and 1995→2003 blind tests
 | six-term formula | 3.56 | **1.26** |
 | Garvey–Kelson chains | 0.85 | **0.69** |
 
-(MeV.) The error on S2n is about a third of the error on B for the formulas. **That
-is what makes a drip line worth attempting at all** — if the uncertainty were the
+(MeV.) The error on S2n is about a third of the error on B for the formulas. That
+is what makes a drip line worth attempting at all — if the uncertainty were the
 4–5 MeV of Phase 5, nothing could be said about anything.
 
 By distance past the frontier:
@@ -44,14 +38,14 @@ By distance past the frontier:
 | 3 | 39 | 1.49 | 0.67 |
 | 4+ | 31 | 0.97 | 0.61 |
 
-Flat, or even falling. But **four neutrons is the whole of the evidence**, and the
+Flat, or even falling. But four neutrons is the whole of the evidence, and the
 drip line is thirty neutrons out. Nothing here says what σ(S2n) does at thirty.
 
 No 1.6 correction from Phase 5b is applied: these are already real blind-test errors,
 and that factor corrects a hold-out estimate to reality. Applying it would count the
 same correction twice.
 
-## Result 2: the band
+## The band
 
 | Z | measured edge | P=0.9 | P=0.5 | P=0.1 | band width | neutrons past the edge |
 |---|---|---|---|---|---|---|
@@ -78,10 +72,10 @@ range of about twenty isotopes", which is not a located drip line by any standar
 **The relations cannot help.** Thirty-five neutrons past the frontier is far beyond
 the twelve chained steps where Phase 4 found the relations stop beating the formula.
 The most accurate tool in this project — competitive with published models in Phase 6
-— **cannot reach the drip line for any element heavier than about neon.** The band
+— cannot reach the drip line for any element heavier than about neon. The band
 above is the formula's, alone, which is why it is as wide as it is.
 
-## Result 3: how much is the choice of formula?
+## How much is the choice of formula?
 
 | | neutrons |
 |---|---|
@@ -89,8 +83,8 @@ above is the formula's, alone, which is why it is as wide as it is.
 | range of their disagreement | 0 to 8 |
 | the statistical band width (median) | 17.5 |
 
-Here the calibrated uncertainty dominates and the model choice does not — **the
-opposite of Phase 2**, where changing the weighting moved the constants by 12 to 16
+Here the calibrated uncertainty dominates and the model choice does not — the
+opposite of Phase 2, where changing the weighting moved the constants by 12 to 16
 error bars.
 
 That comparison has to be made carefully, though. Two formulas sharing four of their
@@ -99,7 +93,7 @@ floor on it rather than a measurement. Phase 6 found the six published models sp
 by 1.53 MeV in mass excess one neutron past the frontier; thirty neutrons out they
 will spread considerably more.
 
-## Result 4: the only place the band can be checked
+## The only place the band can be checked
 
 Three measured nuclei with A ≥ 20 have negative S2n — they are already past the drip
 line, and they are the only direct test available.
@@ -110,18 +104,18 @@ line, and they are the only direct test available.
 | B-21 | 5 | 16 | −2.47 | −11.17 | 0.00 |
 | O-26 | 8 | 18 | −0.02 | −3.26 | 0.01 |
 
-(MeV.) **It calls all three unbound, which is the right answer.** But it has them 2
+(MeV.) It calls all three unbound, which is the right answer. But it has them 2
 to 9 MeV more unbound than they are, so it is right for the wrong reason, and all
 three are light, where the formula's errors happen to point this way.
 
-The other direction: of the 2,292 measured nuclei that **are** bound, the band calls
+The other direction: of the 2,292 measured nuclei that are bound, the band calls
 29 unbound at P < 0.5 and 19 at P < 0.1 — 1.3 % and 0.8 %.
 
 So a band this wide is rarely wrong about nuclei we already have. It simply cannot
 say much about the ones we do not. That is what an honest uncertainty looks like
 when the model is not good enough for the question.
 
-## Result 5: how many nuclei exist?
+## How many nuclei exist?
 
 | formula | P > 0.9 | P > 0.5 | P > 0.1 | spread |
 |---|---|---|---|---|
@@ -131,9 +125,9 @@ when the model is not good enough for the question.
 (Z = 8 to 110, neutron-rich side only, so not directly comparable with published
 totals, which count the proton-rich side too.)
 
-Erler et al., *Nature* **486**, 509 (2012), put the number of bound nuclei near 7,000
-with a spread of a few hundred across the published models. **The spread here is
-about 1,900** — several times wider.
+Erler et al., *Nature* 486, 509 (2012), put the number of bound nuclei near 7,000
+with a spread of a few hundred across the published models. The spread here is
+about 1,900 — several times wider.
 
 The published models are genuinely better than this formula; Phase 6 measured that
 directly, by factors of 8 to 18. So the right reading is not that the field's number
@@ -145,7 +139,7 @@ project cannot settle that.
 
 ---
 
-## What Phase 7 concludes
+## The conclusion
 
 The drip line cannot be located by the methods in this project, and the useful part
 is that it can say by how much, and why:
@@ -161,7 +155,7 @@ is that it can say by how much, and why:
 4. **A total of 7,100 to 9,000 bound nuclei** on the neutron-rich side of Z = 8–110,
    against a published figure near 7,000 with a spread of a few hundred.
 
-## Still to do
+## Loose ends
 
 - The σ(S2n) used here is measured over one to four neutrons past the frontier and
   applied at thirty. That extrapolation is the single largest unverified assumption

@@ -1,8 +1,6 @@
-# Phase 8: what the project found
+# What the project found
 
-**Status:** done. This is the write-up the other documents feed into.
-
----
+The write-up the other documents feed into. It is Phase 8 of the plan.
 
 ## The question
 
@@ -18,12 +16,12 @@ anybody be?
 ## The answer, in one paragraph
 
 The second question turned out to be the whole project. For a mid-mass element, the
-honest band on the drip line from the methods used here is **about twenty isotopes
-wide**, and the most accurate of those methods **cannot reach the drip line at all**
+honest band on the drip line from the methods used here is about twenty isotopes
+wide, and the most accurate of those methods cannot reach the drip line at all
 for anything heavier than neon. Along the way, the standard way of quoting
 uncertainty on a fitted mass formula was found to understate the real movement of its
-constants by **seven to ten times**, the standard way of estimating how far a method
-extrapolates was found to flatter it by about **1.6**, and two further obvious error
+constants by seven to ten times, the standard way of estimating how far a method
+extrapolates was found to flatter it by about 1.6, and two further obvious error
 bars were found to fail by factors of ten in opposite directions. The one
 well-calibrated uncertainty found anywhere in the project belongs to the AME
 evaluators, not to this project.
@@ -33,7 +31,7 @@ evaluators, not to this project.
 The mass formula is Weizsäcker's, 1935. The local relations are Garvey and Kelson's,
 1966. The six published models are other groups' work. The data is the AME's. None of
 the physics here is new, and the finding that mass models extrapolate badly toward
-the drip line is already established — Erler et al., *Nature* **486**, 509 (2012) made
+the drip line is already established — Erler et al., *Nature* 486, 509 (2012) made
 that case with better models than these.
 
 What this project adds is the measurement: pre-registered decisions, blind tests
@@ -45,33 +43,33 @@ reported rather than buried.
 ### 1. The fitted constants drift in one direction, and the error bars do not see it
 
 Across AME 1993, 1995, 2003, 2012, 2016 and 2020, no single step between neighbouring
-editions moves a constant by more than 3.2 standard errors. But **every step moves
-volume, surface, Coulomb and asymmetry the same way**, so they accumulate instead of
+editions moves a constant by more than 3.2 standard errors. But every step moves
+volume, surface, Coulomb and asymmetry the same way, so they accumulate instead of
 cancelling: 1993 to 2020 is −9.1σ, −9.6σ, −8.5σ and −6.7σ.
 
 Separating the two possible causes settles it. Refit a fixed set of 1,788 nuclei with
 each edition's own values and the constants move 0.1σ in twenty-seven years. Refit
 each edition's own set of nuclei with values held at AME2020 and the whole 9σ comes
-back. **The drift is caused by new nuclei entering the fit, not by old masses being
-corrected.**
+back. The drift is caused by new nuclei entering the fit, not by old masses being
+corrected.
 
 The mechanism is identifiable. Of the 635 nuclei added since 1993, three quarters
 scatter evenly around the old formula and do it no harm; the remaining quarter is
-missed by **+4.27 MeV on average with 80 % the same sign**. A minority the formula
+missed by +4.27 MeV on average with 80 % the same sign. A minority the formula
 cannot describe, all wrong in one direction, drags every constant each time a new
 edition appears.
 
-An error bar covering the observed movement would be **seven to ten times wider** than
+An error bar covering the observed movement would be seven to ten times wider than
 the one least squares reports — and that is a floor, because the drift has not
 stopped. The quoted error answers "how much would this move if I redrew my sample
 from the same population?", and each edition's additions are not a redraw from the
 same population. It is not wrong; it answers a question nobody is asking.
 
-This makes a testable prediction: **the next AME edition should move all four the same
-way again.** If it puts the volume term near 15.42 MeV rather than 15.46, the drift
+This makes a testable prediction: the next AME edition should move all four the same
+way again. If it puts the volume term near 15.42 MeV rather than 15.46, the drift
 continues. If it reverses, this explanation is wrong.
 
-See [PHASE_5B.md](PHASE_5B.md).
+Worked through in [Phase-5b.md](Phase-5b.md).
 
 ### 2. Hold-out testing flattered the method by about 1.6
 
@@ -79,8 +77,8 @@ To find out how fast a method loses accuracy when extrapolating, the standard mo
 to hide part of the data and predict it. Done on AME2020, hiding the outer rim,
 Garvey–Kelson chains gave 0.27 MeV of error at one step. Run against the real
 1993–2020 frontier instead, with each split's hold-out computed on the earlier
-edition only, the error was larger in **20 of 22 comparisons and in all five
-independent splits**, by a median factor of **1.57**.
+edition only, the error was larger in 20 of 22 comparisons and in all five
+independent splits, by a median factor of 1.57.
 
 The reason is mechanical: cutting the rim off a finished chart leaves a tidy,
 fully-surrounded edge to predict, while a real research frontier is ragged, full of
@@ -90,17 +88,17 @@ This is the finding with reach outside nuclear physics, and it is also the one w
 the literature already has the general idea — see Meredig et al. (*Mol. Syst. Des.
 Eng.*, 2018) on random cross-validation overstating extrapolative performance in
 materials discovery, and Roberts et al. (*Ecography*, 2017) on spatially and
-temporally structured data. What is unusual here is a **real time split** rather than
+temporally structured data. What is unusual here is a real time split rather than
 a simulated one: the actual 1993 dataset against thirty years of subsequent
 measurement, five times over, because nuclear mass evaluation reissues its dataset
 with a date stamp.
 
 Phase 5 initially reported this factor as 2.2 and suggested it grew with the length
-of the gap. Phase 5b found the typical value is 1.57 and that **the trend with gap
-length is not there** (r = 0.02 across independent splits) — the apparent trend came
+of the gap. Phase 5b found the typical value is 1.57 and that the trend with gap
+length is not there (r = 0.02 across independent splits) — the apparent trend came
 from long splits that overlap the short ones and reuse their data.
 
-See [PHASE_5B.md](PHASE_5B.md), Result 1.
+The five splits are in [Phase-5b.md](Phase-5b.md).
 
 ### 3. Four obvious error bars, and how each one fails
 
@@ -119,7 +117,7 @@ or five weightings of the same fit set. Disagreement between genuinely independe
 methods is informative. Of the things this project computed itself, nothing was well
 calibrated; the two that were belong to other people.
 
-See [PHASE_4.md](PHASE_4.md), [PHASE_5.md](PHASE_5.md), [PHASE_6.md](PHASE_6.md).
+The split-by-split table is in [Phase-5b.md](Phase-5b.md).
 
 ### 4. The 1966 relations are competitive with modern global models
 
@@ -141,12 +139,12 @@ a few dozen lines of R, matching a modern global model one step past the frontie
 The cost is coverage: the chains are silent on 11 of the 51, and on 17 % of the
 2003→2020 test set, because a chain needs five measured neighbours to start from.
 
-The accuracy decays as **(chained steps)^1.37**, not as the square root — chained
+The accuracy decays as (chained steps)^1.37, not as the square root — chained
 errors are not independent, since a prediction inherits its neighbours' mistakes and
-they push the same way. The global formula overtakes the chains at about **twelve
-chained steps**.
+they push the same way. The global formula overtakes the chains at about twelve
+chained steps.
 
-See [PHASE_4.md](PHASE_4.md), [PHASE_6.md](PHASE_6.md).
+See [Phase-4.md](Phase-4.md), [Phase-6.md](Phase-6.md).
 
 ### 5. The evaluators beat the models
 
@@ -156,23 +154,23 @@ systematic trends around each nucleus, and one step past the frontier that beats
 global fit to the whole chart. Their stated uncertainties were also the only
 well-calibrated ones in the project.
 
-See [PHASE_6.md](PHASE_6.md).
+See [Phase-6.md](Phase-6.md).
 
 ### 6. The blind-test penalty is not a property of a model
 
 Phase 5 found the five-term formula 1.65 times worse on nuclei it had not seen. Run
-on all five splits, the penalty is **0.92 on both pre-2003 splits** — the formula
+on all five splits, the penalty is 0.92 on both pre-2003 splits — the formula
 predicted the newly measured nuclei *better* than it fitted its own set — and climbs
 to 1.48, 1.51, 1.70 from 2003 on.
 
 So "N times worse out of sample" describes where the new data landed, not the model.
 In the 1990s new measurements filled in near stability and flattered the formula;
 since then they have pushed outward into the region where it fails. The one thing
-steady across all eight splits is the **sign of the bias**: +0.9 to +2.1 MeV every
+steady across all eight splits is the sign of the bias: +0.9 to +2.1 MeV every
 time, newly measured nuclei always more bound than predicted. That sign is what drives
 finding 1.
 
-See [PHASE_5B.md](PHASE_5B.md), Result 2.
+See [Phase-5b.md](Phase-5b.md).
 
 ## Where the project contradicted itself, and which way it went
 

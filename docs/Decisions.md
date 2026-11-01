@@ -43,7 +43,7 @@ separately.
 nuclei. It was chosen before fitting.
 **Also tried:** all nuclei (except the free neutron and hydrogen-1). Constants
 moved by about 9 error bars, and the typical miss rose from 3.2 to 3.7 MeV. See
-[PHASE_2.md](PHASE_2.md), Result 5.
+[Phase-2.md](Phase-2.md), under “the cutoff matters too”.
 
 ### D6. Main fit uses uniform weighting; four floors reported alongside (Phase 2)
 

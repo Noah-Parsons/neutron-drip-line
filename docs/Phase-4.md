@@ -1,15 +1,9 @@
 # Phase 4: the Garvey–Kelson relations
 
-**Goal:** test a second, completely different prediction method — local relations
-between neighbouring nuclei instead of one global formula — and find out how far
-outward it can be trusted.
-
-**Status:** done.
-
-The choices for this phase are D12–D16 in [DECISIONS.md](DECISIONS.md), written
-down before the chaining test was run.
-
----
+A second prediction method, built on local relations between neighbouring nuclei
+rather than one global formula, and the question of how far outward it can be
+trusted. The choices are D12–D16 in [Decisions.md](Decisions.md), written down
+before the chaining test was run.
 
 ## What the relations are
 
@@ -22,7 +16,7 @@ between the six terms, leaving only local structure behind.
 The six nuclei fit inside a 3×3 patch of the chart: three neighbouring elements,
 three neighbouring neutron numbers.
 
-## Result 1: the relations found from the data, not copied
+## The relations found from the data, not copied
 
 There are only six ways to pick three cells with a plus sign and three with a
 minus from that 3×3 patch, using each row and each column once on each side. All
@@ -42,7 +36,7 @@ useful control: they show what an arrangement that does *not* cancel the smooth
 part of the mass looks like, which is what a mistyped index would give.
 
 The two that work are the pair Garvey and Kelson published: `120/201` is the
-**transverse** relation, `021/102` the **longitudinal** one.
+**transverse** relation, `021/102` the longitudinal one.
 
 A useful consequence of that cancellation: masses, mass excesses and binding
 energies all give the same answer, because they differ only by terms linear in Z,
@@ -59,14 +53,14 @@ order M(N, Z) and in terms of masses:
 >
 > M(N+2, Z) − M(N, Z−2) + M(N+1, Z−2) − M(N+2, Z−1) + M(N, Z−1) − M(N+1, Z) = 0
 
-Sources: Garvey and Kelson, *Physical Review Letters* **16**, 197 (1966); Garvey,
-Gerace, Jaffe, Talmi and Kelson, *Reviews of Modern Physics* **41**, S1 (1969).
+Sources: Garvey and Kelson, *Physical Review Letters* 16, 197 (1966); Garvey,
+Gerace, Jaffe, Talmi and Kelson, *Reviews of Modern Physics* 41, S1 (1969).
 Quoted in this form, with the derivation of why they work, by Piekarewicz,
 Centelles, Roca-Maza and Viñas, *Garvey–Kelson relations for nuclear charge radii*,
 arXiv:0912.0503, Eqs. (1a) and (1b).
 
 Both equations pick out the same six nuclei as the two arrangements found by
-enumeration, to 7×10⁻¹⁰ keV, **and with the same sign**. So the residuals in this
+enumeration, to 7×10⁻¹⁰ keV, and with the same sign. So the residuals in this
 phase are the published quantity, not its negative.
 
 Two labelling flips cancel on the way there: the enumeration puts the plus and
@@ -97,7 +91,7 @@ Adding the Phase 3 shell term to the smooth surface changes almost nothing (132 
 130 keV, 218 → 216 keV). That term is a function of Z plus a function of N, and
 both relations cancel those exactly.
 
-The transverse relation is the more exact of the two, and exactly so: it **is** a
+The transverse relation is the more exact of the two, and exactly so: it is a
 third difference of the mass surface,
 
 > transverse = ∂³M/∂Z∂N² − ∂³M/∂Z²∂N
@@ -112,7 +106,7 @@ That said, on real data the longitudinal relation has the *smaller* rms (486
 against 599 keV). The smooth leftover is not what limits either of them; local
 structure is.
 
-## Result 2: how accurate they are
+## How accurate they are
 
 Over every patch with all six masses measured:
 
@@ -124,8 +118,8 @@ Over every patch with all six masses measured:
 | longitudinal, A ≥ 20 | 1,979 | 244 keV | 104 keV | 353 keV | 1,684 keV |
 
 For comparison, the six-term formula of Phase 3 misses by 2,564 keV rms on the
-nuclei it was fitted to. **In the median the relations are about twenty times
-more accurate.**
+nuclei it was fitted to. In the median the relations are about twenty times
+more accurate.
 
 Two things to be careful about.
 
@@ -150,7 +144,7 @@ element's measured range.) Within a band the accuracy is roughly flat — it doe
 not get worse as you approach the neutron-rich edge of measured territory. The
 strong pattern is with mass, not with distance.
 
-## Result 3: predicting outward
+## Predicting outward
 
 If five of the six masses are known, the relation gives the sixth. Feed each
 prediction back in and it runs outward step by step. Twelve routes can reach any
@@ -177,7 +171,7 @@ measured neighbours to start from. The global formula always returns an answer,
 even a bad one; the relations sometimes return nothing. Those 17 are reported,
 not filled in from the formula (D14).
 
-## Result 4: how fast the error grows
+## How fast the error grows
 
 Repeating the hold-out at depths of 4, 8, 12, 16 and 20 hidden isotopes and
 pooling gives enough nuclei at each chain length to measure the growth. The x
@@ -200,7 +194,7 @@ an unmeasured gap, and it is the chaining that costs the accuracy.
 
 (rms error in MeV; the winner in bold.) Fitted as a power law,
 
-> rms ≈ **0.13 MeV × (chained steps)^1.37**
+> rms ≈ 0.13 MeV × (chained steps)^1.37
 
 **The exponent is 1.37, not 0.5.** A random walk of independent errors would give
 0.5. It is steeper because the errors are not independent: a prediction is built
@@ -211,9 +205,9 @@ The fit is a summary, not a law. It is pulled by the long end of the range, so i
 over-predicts the first step (0.13 against 0.27 MeV measured) and under-predicts
 the last few. The table is the result; the power law is shorthand for it.
 
-## Result 5: where the relations stop winning
+## Where the relations stop winning
 
-The six-term formula first overtakes them at **twelve chained steps** (3.55
+The six-term formula first overtakes them at twelve chained steps (3.55
 against 3.49 MeV), and is clearly ahead after that.
 
 This is a hard limit on the method and it matters for Phase 7. For most heavy
@@ -222,7 +216,7 @@ is well past where the relations' advantage runs out. They are the better tool
 for the first ten steps or so into unmeasured territory and the worse tool beyond
 that.
 
-## Result 6: two error bars that don't work
+## Two error bars that don't work
 
 Two obvious ways to put an uncertainty on a chained prediction. Both fail, in
 opposite directions.
@@ -253,10 +247,10 @@ that share an input is not evidence.
 
 What is left is the measured curve itself. The hold-out gives an honest error bar
 as a function of chain length, and that is what Phase 7 will use. Its limit is
-that it is one average over the whole chart, and the region table in Result 2
+that it is one average over the whole chart, and the region table above
 shows the scatter around it is large.
 
-## Result 7: the two relations separately
+## The two relations separately
 
 | | reached, of 364 | rms | median miss |
 |---|---|---|---|
@@ -283,7 +277,7 @@ bad.
 
 ---
 
-## What Phase 4 gives the rest of the project
+## What this hands on
 
 1. A second prediction method, independent of the mass formula, that is about
    twenty times more accurate close to measured nuclei.
@@ -293,7 +287,7 @@ bad.
 4. Two failed error bars, with the numbers, which is why Phase 7 will use the
    empirical curve instead of propagating anything.
 
-## Still to do
+## Loose ends
 
 - The chaining test uses AME2020 only, so every "prediction" is of a nucleus
   somebody has already measured. The real extrapolation test is Phase 5.

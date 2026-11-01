@@ -1,22 +1,21 @@
 # Phase 3: what the formula misses, and a shell correction
 
-**Goal:** find the pattern in the five-term formula's mistakes, design a sixth
-term to fix it, and check whether that fix **helps or hurts far from stability**,
-where the drip line is.
+Looking for the pattern in the five-term formula's mistakes, designing a sixth term
+to fix it, and asking whether the fix helps or hurts far from stability, where the
+drip line is.
 
-**Status:** done.
+The shape of the correction and the tests used to judge it were written down before
+the six-term fit was run for the first time, as decisions D9–D11 in
+[Decisions.md](Decisions.md). That stops the results quietly steering the choices.
 
-The shape of the correction, and the tests used to judge it, were written down
-**before** the six-term fit was first run: decisions D9–D11 in
-[DECISIONS.md](DECISIONS.md). That stops the results from quietly steering the
-choices.
+One warning before the results. Phase 6 later found that the six-term formula
+predicts *worse* than the five-term one on real unseen data. The conclusion this
+phase reaches did not survive.
 
----
-
-## Result 1: the data finds the magic numbers by itself
+## The data finds the magic numbers by itself
 
 For every neutron number N, we averaged the formula's misses over all nuclei
-with that N, and did the same for every Z. Then we looked for **peaks**: values
+with that N, and did the same for every Z. Then we looked for peaks: values
 higher than everything within a window around them. Nobody told the search where
 the magic numbers are.
 
@@ -27,7 +26,7 @@ the magic numbers are.
 | ±8 | 16, **29, 50, 82, 125**, 159 | 5, **29, 50, 82**, 107 |
 
 **In simple words:** the peaks land on or right next to the known magic numbers
-**28, 50, 82 and 126** (for neutrons) and **28, 50 and 82** (for protons). They
+**28, 50, 82 and 126** (for neutrons) and 28, 50 and 82 (for protons). They
 appear at every window size. "The model's mistakes told me where the shells are"
 is true.
 
@@ -37,12 +36,12 @@ is true.
   formula fails worst anyway.
 - **N = 16 is interesting.** Experiments have suggested that 16 behaves like a
   magic number in very neutron-rich light nuclei (look up Ozawa et al., 2000).
-  Our peak is **consistent with that, but doesn't prove it**. It comes from a few
+  Our peak is consistent with that, but doesn't prove it. It comes from a few
   light nuclei the formula gets badly wrong for other reasons too.
 - **20 is weak.** It appears for protons at small windows only, and never
   clearly for neutrons.
 
-## Result 2: the shell correction
+## The shell correction
 
 The sixth term (decision D9) is
 
@@ -51,13 +50,13 @@ The sixth term (decision D9) is
 - **ν** is how far n is past the magic number below it.
 - **D** is the size of that shell.
 
-So f is **zero at every magic number** and **biggest halfway through a shell**.
+So f is zero at every magic number and biggest halfway through a shell.
 
-**Fitted:** a_sh = **−0.506 ± 0.013 MeV**.
+**Fitted:** a_sh = −0.506 ± 0.013 MeV.
 
 It's negative, as the physics says it should be: nuclei in the middle of a shell
-are held **less** tightly than the smooth formula predicts, and nuclei at a full
-shell **more** tightly. The fit found the sign on its own.
+are held less tightly than the smooth formula predicts, and nuclei at a full
+shell more tightly. The fit found the sign on its own.
 
 | | five terms | six terms |
 |---|---|---|
@@ -65,12 +64,12 @@ shell **more** tightly. The fit found the sign on its own.
 | improvement | | **21 %** |
 
 The other five constants barely moved (all by less than 0.25 MeV). The shell
-constant is **nearly independent** of them (correlations of 0.10 or less). Unlike
+constant is nearly independent of them (correlations of 0.10 or less). Unlike
 volume and surface, it measures something none of the other terms can see.
 
-## Result 3: which magic numbers it fixed, and which it made worse
+## Which magic numbers it fixed, and which it made worse
 
-Average miss for nuclei sitting **exactly at** each magic number (closer to 0 is
+Average miss for nuclei sitting exactly at each magic number (closer to 0 is
 better):
 
 | magic number | nuclei | before (MeV) | after (MeV) | |
@@ -85,7 +84,7 @@ better):
 | N = 20 | 16 | −1.38 | −2.49 | ✘ worse |
 | Z = 20 | 21 | −0.72 | −2.04 | ✘ worse |
 
-It fixes the **big** shells (50, 82, 126) and makes the
+It fixes the big shells (50, 82, 126) and makes the
 **small** ones (20, 28) worse. One constant has to serve every shell. The big
 shells dominate the fit, and the small ones get pushed the wrong way.
 
@@ -94,7 +93,7 @@ In the middle of the large 82–126 neutron shell
 are known to be deformed (squashed out of a sphere), which also changes their
 binding. This simple term knows nothing about that.
 
-## Result 4: far from stability, it still helps (the key test)
+## Far from stability, it still helps (the key test)
 
 Decision D11: for each of the 91 elements with at least 8 measured isotopes, we
 **hid its 4 most neutron-rich isotopes** (364 nuclei in all). Both formulas were
@@ -120,7 +119,7 @@ By region of the chart:
 | Z 51–82 | 3.17 | 2.65 |
 | Z > 82 | 5.47 | 4.20 |
 
-It helps everywhere, but **least for the lightest elements**, which are the ones
+It helps everywhere, but least for the lightest elements, which are the ones
 whose drip line has actually been measured.
 
 **Two warnings from this test:**
@@ -132,7 +131,7 @@ whose drip line has actually been measured.
    past the rest, and for heavy elements, the most neutron-rich *measured*
    isotopes are still far from the drip line. Phase 5 does it properly.
 
-## Result 5: the worst misses aren't touched
+## The worst misses aren't touched
 
 The biggest misses are still very neutron-rich light nuclei. The correction
 changes almost nothing there:
@@ -152,7 +151,7 @@ than globally, may do better there.
 
 ---
 
-## What to carry into later phases
+## What the next phases inherit
 
 1. **The six-term formula is the better model**, both in the fit and one step
    outward. Carry both forward and compare them in the blind test.

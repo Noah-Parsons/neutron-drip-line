@@ -1,19 +1,14 @@
 # Phase 6: the published models on the same test
 
-**Goal:** score the field's standard mass models on the same blind test, so this
-project's methods can be placed against what people actually use.
-
-**Status:** done.
-
-Decisions D25 in [DECISIONS.md](DECISIONS.md).
-
----
+Scoring the field's standard mass models on the same blind test, so this project's
+methods can be placed against what people actually use. See D25 in
+[Decisions.md](Decisions.md).
 
 ## What could be obtained, and what could not
 
 Six published models, plus the AME evaluators' own extrapolations with their stated
 uncertainties, come from the comparison table behind Huang, Audi, Wang, Kondev, Naimi
-and Xu, *Scientific Data* **9**, 532 (2022) — figshare collection 5640763, Data set 2.
+and Xu, *Scientific Data* 9, 532 (2022) — figshare collection 5640763, Data set 2.
 Every value in that table is a prediction for a nucleus nobody had measured when it
 was made, which is what makes this test possible.
 
@@ -25,11 +20,11 @@ depends on the distinction, but it is recorded.
 ## The test set
 
 Nuclei measured in AME2020 but not in AME2016 — the 16→20 split of Phase 5b — that
-the published table also carries. **51 nuclei**, spread across the chart: 5 with
+the published table also carries. 51 nuclei, spread across the chart: 5 with
 Z ≤ 20, 16 with Z 21–50, 21 with Z 51–82, 9 above. Small, but every one was an open
 question when all seven predictions were made.
 
-## Result 1: the standings
+## The standings
 
 | method | nuclei | rms | median miss | bias | worst |
 |---|---|---|---|---|---|
@@ -77,9 +72,9 @@ global models never are.
 **The formula this project spent Phases 2 and 3 on is 8 to 18 times worse than
 anything published.** That is the honest place to put it.
 
-## Result 2: the six-term formula is worse than the five-term one
+## The six-term formula is worse than the five-term one
 
-3.07 against 2.82 in rms, and **3.01 against 0.63 in the median** — the shell
+3.07 against 2.82 in rms, and 3.01 against 0.63 in the median — the shell
 correction nearly quintuples the typical error on this test set.
 
 Phase 3 asked exactly this question, with the far-from-stability test of D11, and
@@ -89,9 +84,9 @@ Here it is clearly worse on both.
 
 Taken with Phase 5b, the reading is that the shell term helps where it was designed
 and hurts when extrapolated, and the AME2020 hold-out that justified it was the wrong
-test — the same lesson as Phase 5b's Result 1, arrived at independently.
+test — the same lesson Phase 5b reached independently.
 
-## Result 3: whose error bars hold
+## Whose error bars hold
 
 The AME publishes an uncertainty with every extrapolated value, and 48 of these
 nuclei have one.
@@ -109,7 +104,7 @@ nuclei have one.
 ours.** Slightly conservative in the middle, and the tail holds too. Phase 5 found
 this project's own bands held 64 % at 1σ and 83 % at 2σ.
 
-## Result 4: disagreement between models is a usable error bar
+## Disagreement between models is a usable error bar
 
 | | value |
 |---|---|
@@ -129,7 +124,7 @@ an input was shown to be worthless as an error bar. Disagreement between genuine
 independent methods is informative; disagreement between methods that share their
 inputs is not.
 
-## Result 5: by region
+## By region
 
 | region | nuclei | AME2016 | WS4 | GK chains | FRDM12 | HFB21 | five-term |
 |---|---|---|---|---|---|---|---|
@@ -164,7 +159,7 @@ does not exist. It is reported rather than argued away.
 
 ---
 
-## What Phase 6 gives the rest of the project
+## Where that leaves the project
 
 1. A place for this project's methods in the real standings: the chains among the
    best, the formula far behind.
