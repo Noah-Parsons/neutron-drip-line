@@ -49,6 +49,7 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
 | 3 | Leftovers (residuals) and a shell correction | **done**: [docs/PHASE_3.md](docs/PHASE_3.md) |
 | 4 | Garvey–Kelson relations | **done**: [docs/PHASE_4.md](docs/PHASE_4.md) |
 | 5 | Blind test: fit to AME2003, predict nuclei measured since | **done**: [docs/PHASE_5.md](docs/PHASE_5.md) |
+| 5b | The same test on all six AME editions since 1993 | **done**: [docs/PHASE_5B.md](docs/PHASE_5B.md) |
 | 6 | Compare the published models on the same test | to do |
 | 7 | The drip line as a probability band | to do |
 | 8 | Write up | to do |
@@ -143,6 +144,30 @@ Cite: Huang et al., *Chinese Physics C* 45, 030002 (2021); Wang et al.,
   Doubling the curve makes it honest, so Phase 7 carries twice it.
 - The worst twelve misses are all light and neutron-rich — boron-21 at 30 MeV — which
   is the one corner of the chart where the drip line has actually been reached.
+
+**Every edition, not just one split (Phase 5b)** — the blind test run six times
+- **The hold-out is optimistic every time** (20 of 22 comparisons, all five
+  independent splits) but by **1.57**, not the 2.2 of Phase 5. And there is **no
+  trend with the length of the gap** (r = 0.02); the apparent trend came from
+  overlapping splits sharing their data.
+- **The 1.65 penalty is not a property of the formula.** On the two pre-2003 splits
+  it is **0.92** — the formula predicted the new nuclei better than it fitted its own
+  set. It climbs past 1.5 only from 2003, as experiments pushed outward.
+- **The constants drift one way, every time.** No single step between neighbouring
+  editions exceeds 3.2σ, but all five steps move volume, surface, Coulomb and
+  asymmetry in the same direction, so they accumulate to −9.1σ, −9.6σ, −8.5σ and
+  −6.7σ from 1993 to 2020. A single-step check would have found nothing.
+- **The drift is caused by new nuclei, not corrected ones.** Holding the set of
+  nuclei fixed and letting the values be revised moves the constants 0.1σ in
+  twenty-seven years; holding the values fixed and letting the set grow reproduces
+  the whole 9σ.
+- **The mechanism:** of the 635 nuclei added since 1993, the worst quarter is missed
+  by **+4.27 MeV on average with 80 % the same sign**, while the other three quarters
+  scatter evenly. A minority the formula cannot describe, all wrong one way, drags
+  every constant each time.
+- **An honest error bar would be 7 to 10 times wider**, and that is a floor, because
+  the drift has not stopped. It predicts the next edition will move all four the same
+  way again.
 
 ## How to run it
 

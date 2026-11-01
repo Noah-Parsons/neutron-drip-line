@@ -42,7 +42,7 @@ This project asks:
 | 7 | Turn it all into a drip line **with a probability for every isotope** |
 | 8 | Write |
 
-Done so far: **Phases 0, 1, 2, 3, 4 and 5.** See [PHASE_1.md](PHASE_1.md),
+Done so far: **Phases 0, 1, 2, 3, 4, 5 and 5b.** See [PHASE_1.md](PHASE_1.md),
 [PHASE_2.md](PHASE_2.md), [PHASE_3.md](PHASE_3.md), [PHASE_4.md](PHASE_4.md) and
 [PHASE_5.md](PHASE_5.md).
 
@@ -111,6 +111,7 @@ the table `df`. Run everything from the top again.
 | `docs/PHASE_3.md` | finding the magic numbers, and the shell correction |
 | `docs/PHASE_4.md` | the local relations, and how far outward they can be trusted |
 | `docs/PHASE_5.md` | the blind test: predicting nuclei measured after 2003 |
+| `docs/PHASE_5B.md` | the same test repeated on every AME edition since 1993 |
 | `docs/DECISIONS.md` | every choice made, and why |
 
 The data files (`*.mas20.txt`, `*.mas03`) are **not** stored in the repository.

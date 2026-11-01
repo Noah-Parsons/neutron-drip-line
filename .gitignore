@@ -1,7 +1,14 @@
-# Data files: free from the IAEA, downloaded by the notebook
+# Data files: free from the IAEA and the AMDC, downloaded by the notebook
 *.mas20.txt
 *.mas20
+*.mas16
+*.mas12
 *.mas03
+*.mas95
+*.mas93
+*.mas83
+mass16.txt
+mass16round.txt
 data/
 
 # The project manual stays private

@@ -290,3 +290,45 @@ whichever way it comes out.
 Every weighting variant is reported, and no choice is revised after seeing a test
 result. Anything that turns out to be needed afterwards is reported separately and
 labelled, as D8 requires.
+
+---
+
+*D21–D23 cover Phase 5b, which was not in the manual's plan. It exists because
+Phase 5 produced three claims that one pair of editions could not support.*
+
+### D21. Which editions, and which splits count (Phase 5b)
+
+**Chose:** AME 1993, 1995, 2003, 2012, 2016 and 2020. AME1983 exists on the mirror
+and was left out: it lists pions, omits repeated mass numbers on continuation lines
+and tabulates total rather than per-nucleon binding energy, and reverse-engineering
+its columns is not worth the one extra point.
+**Each edition's binding energies use its own Δ(¹H) and Δ(n)**, read out of the same
+file rather than typed in, so no edition borrows a constant from another.
+**Only the five consecutive splits count as evidence.** 93→03, 03→20 and 93→20 are
+reported, but they are built out of the consecutive ones and are the same data
+counted again. Any statement about a trend across splits uses the five only.
+
+### D22. The hold-out must be computed on the earlier edition (Phase 5b)
+
+**Chose:** for a split (E1, E2), the hold-out estimate is computed **inside E1** —
+hide the outer rim of E1 and chain out to it.
+**Why:** Phase 5 compared the real 2003→2020 error against a hold-out cut from
+AME2020, the finished chart. That is not something a person in 2003 could have
+computed, and it mixes the question being asked. Using E1 only is the honest
+analogue of what a person standing in that year could have done, and it makes the
+test harder to pass.
+**Consequence:** the Phase 5 optimism factor of 2.2 is not directly comparable with
+the factors reported here. Both are stated.
+
+### D23. Separating new nuclei from revised values (Phase 5b)
+
+**Chose:** two counterfactual refits per edition.
+- **A:** the 1,788 nuclei with A ≥ 20 measured in *all six* editions, using each
+  edition's own values. Isolates the effect of masses being revised.
+- **B:** each edition's own set of nuclei, with every mass taken from AME2020.
+  Isolates the effect of the set growing.
+**Why:** without this the drift has two candidate causes and no way to choose. B
+reproduces the whole 9σ and A moves nothing, which settles it.
+**Known limit:** B uses 2020 values for nuclei whose 1993 values were worse known,
+so it is a counterfactual rather than history. It answers "would the set change
+alone have done this?", which is the question that matters here.

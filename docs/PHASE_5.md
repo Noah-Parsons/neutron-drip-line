@@ -72,7 +72,14 @@ include these test nuclei. Only its constant was refitted on 2003 data. It is
 reported alongside, not as a result.
 
 Reporting a fit residual as though it were a prediction error would have understated
-the error by a factor of 1.65. Two details matter more than the ratio:
+the error by a factor of 1.65.
+
+> **Corrected by Phase 5b.** That 1.65 is not a property of the formula. On the
+> 1993→1995 and 1995→2003 splits the penalty is **0.92** — the formula predicted the
+> new nuclei better than it fitted its own set. It climbs above 1.5 only from 2003 on.
+> See [PHASE_5B.md](PHASE_5B.md), Result 2.
+
+Two details matter more than the ratio:
 
 - **The median error is 1.72 MeV**, well under half the rms. The rms is carried by a
   tail, not by typical behaviour.
@@ -97,6 +104,14 @@ right reason.
 bars had already been inflated by χ²/dof — a correction of a factor of hundreds — and
 they are still far too small to cover what seventeen years of data actually changed.
 D7 flagged this as its own suspected weakness. It was right.
+
+> **Sharpened by Phase 5b.** Across all six editions no single step between
+> neighbouring editions exceeds 3.2σ. What makes the total large is that **every step
+> goes the same way** for four of the five constants, so they accumulate instead of
+> cancelling: 1993→2020 is −9.1σ, −9.6σ, −8.5σ and −6.7σ. Phase 5b also shows the
+> drift comes entirely from newly added nuclei rather than from old masses being
+> corrected, and identifies the mechanism. See [PHASE_5B.md](PHASE_5B.md),
+> Results 3–5.
 
 This is the strongest single result in the project so far, and it answers the
 project's question directly. A published constant of the mass formula, quoted with a
@@ -220,6 +235,13 @@ method by a factor of two.
 Used as a 1σ band, the Phase 4 curve holds 51 % rather than 68 %. **Doubling it gives
 68 %.** So Phase 7 carries twice the Phase 4 curve — a correction this phase earned
 rather than assumed.
+
+> **Qualified by Phase 5b.** Repeated on every edition pair, the hold-out is
+> optimistic every time (20 of 22 comparisons) but by **1.57** on the five independent
+> splits, not 2.2. The 2.2 here is one long split and the top of the range. There is
+> also **no evidence the optimism grows with the length of the gap**: the correlation
+> across independent splits is 0.02, and the apparent trend came from overlapping
+> data. See [PHASE_5B.md](PHASE_5B.md), Result 1.
 
 ## Result 7: the worst misses, and what the relations do with them
 
